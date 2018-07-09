@@ -1,0 +1,7 @@
+D:\VSProjects\TeamProjects\TarantoolODBCDriverInstaller\TarantoolODBCDriverInstaller\TarantoolODBCDriverInstaller\bin\Debug\TarantoolODBCDriverInstaller.msi
+D:\VSProjects\TeamProjects\TarantoolODBCDriverInstaller\TarantoolODBCDriverInstaller\TarantoolODBCDriverInstaller\bin\Debug\TarantoolODBCDriverInstaller.wixpdb
+obj\Debug\Product.wixobj
+obj\Debug\StandardUI.wixobj
+obj\Debug\TarantoolODBCDriverInstaller.wixproj.BindContentsFileListnull.txt
+obj\Debug\TarantoolODBCDriverInstaller.wixproj.BindOutputsFileListnull.txt
+obj\Debug\TarantoolODBCDriverInstaller.wixproj.BindBuiltOutputsFileListnull.txt
