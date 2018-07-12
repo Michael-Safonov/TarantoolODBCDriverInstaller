@@ -35,8 +35,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Features.wxs" />
-    <Compile Include="Files.wxs" />
+    <Compile Include="InstallationComponents.wxs" />
     <Compile Include="Product.wxs" />
+    <Compile Include="WixUI_CustomMondo.wxs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="InstallFiles" />
