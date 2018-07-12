@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <?include Variables.wxi?>
+  <Product Id="*" Name="$(var.ProductName)" Language="1033" Version="1.0.0.0" Manufacturer="Tarantool" UpgradeCode="35a8fe49-4b51-43cc-9393-214c7cce8523" Codepage="1252">
+    <Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" Description="Tarantool ODBC Driver installer" SummaryCodepage="1252" Platform="x86" />
+    <CustomAction Id="PreventDowngrading" Error="Newer version already installed." />
+    <CustomAction Id="VSDCA_AllUsers" Property="ALLUSERS" Value="2" Execute="firstSequence" />
+    <Property Id="ARPHELPLINK" Value="http:\tarantool.com" />
+    <Upgrade Id="35a8fe49-4b51-43cc-9393-214c7cce8523">
+      <UpgradeVersion Maximum="1.0.0.0" Property="OLDPRODUCTFOUND" OnlyDetect="no" IncludeMinimum="yes" IncludeMaximum="no" Language="1033" />
+      <UpgradeVersion Minimum="1.0.0.0" Property="NEWPRODUCTFOUND" OnlyDetect="yes" IncludeMinimum="no" Language="1033" />
+    </Upgrade>
+    <MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
+    <MediaTemplate EmbedCab="yes" />
+    
+      
+    <Property Id="MyFolder" Value="C:\Windows\SysWOW64\" />
+    <Property Id="Win64Version" Value="0"/>
+    
+    
+    <Directory Id="TARGETDIR" Name="SourceDir">
+      <Directory Id="MyFolder"></Directory>
+    </Directory>
+    
+    <!--<Feature Id="ProductFeature" Title="TarantoolODBCDriverInstaller" Level="1">
+      <ComponentRef Id="Driver64Component" />
+      <ComponentRef Id="Driver32Component" />
+      <ComponentRef Id="comp_6F3AABC6_ADF5_4482_B195_475EDB87271D" />
+      <ComponentRef Id="comp_2DFF8E4E_4824_4D43_A3C8_F3F5A866B82C" />
+    </Feature>-->
+    
+
+    <FeatureRef Id="Driver64Feature"/>
+    <FeatureRef Id="Driver32Feature" />
+    
+    <UIRef Id="WixUI_Mondo"/>
+  </Product>
+  <Fragment>
+    <!--<Component Id="comp_6F3AABC6_ADF5_4482_B195_475EDB87271D" Guid="E6994914-5B16-43FE-8904-19A5EA5ECBEF" Transitive="no" Directory="TARGETDIR" Win64="yes">
+      <RegistryKey Root="HKLM" Key="SOFTWARE\ODBC\ODBCINST.INI\Tarantool" ForceCreateOnInstall="yes" ForceDeleteOnUninstall="yes">
+        <RegistryValue Type="string" Name="APILevel" Value="1" />
+        <RegistryValue Type="string" Name="ConnectFunctions" Value="YYN" />
+        <RegistryValue Type="expandable" Name="Driver" Value="C:\Windows\System32\Driver_x64.dll" />
+        <RegistryValue Type="expandable" Name="Setup" Value="C:\Windows\System32\Driver_x64.dll" />
+        <RegistryValue Type="string" Name="DriverODBCVer" Value="03.80" />
+        <RegistryValue Type="string" Name="FileUsage" Value="0" />
+        <RegistryValue Type="string" Name="SQLLevel" Value="1" />
+        <RegistryValue Type="integer" Name="UsageCount" Value="0" />
+      </RegistryKey>
+    </Component>
+    <Component Id="comp_2DFF8E4E_4824_4D43_A3C8_F3F5A866B82C" Guid="010CD63D-AA7A-4751-A114-914252FE5C9A" Transitive="no" Directory="TARGETDIR" Win64="yes">
+      <RegistryKey Root="HKLM" Key="SOFTWARE\ODBC\ODBCINST.INI\ODBC Drivers" ForceCreateOnInstall="yes" ForceDeleteOnUninstall="no">
+        <RegistryValue Type="string" Name="Tarantool" Value="Installed" />
+      </RegistryKey>
+    </Component>-->
+  </Fragment>
+</Wix>

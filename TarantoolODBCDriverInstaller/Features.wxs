@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	
+  <Fragment>
+    <Feature Id="Driver64Feature" Title="Driver64" Description="Descrip Driver64" Level="0">
+      <Condition Level="1">VersionNT64</Condition>
+      <ComponentRef Id="Driver64Component" />
+      <Feature Id="Driver32Feature1" Title="Driver32" Description="descr Driver32" Level="2">      
+        <ComponentRef Id="Driver32Component" />
+      </Feature>
+    </Feature>
+  </Fragment>
+  
+  <Fragment>
+    <Feature Id="Driver32Feature" Title="Driver32" Description="descr Driver32" Level="0">
+      <Condition Level="1"><![CDATA[NOT(VersionNT64)]]></Condition>
+      <ComponentRef Id="Driver32Component" />
+    </Feature>
+	</Fragment>
+
+</Wix>
