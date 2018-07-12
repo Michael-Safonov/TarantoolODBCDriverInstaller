@@ -1,2 +1,0 @@
-D:\VSProjects\TeamProjects\TarantoolODBCDriverInstaller\TarantoolODBCDriverInstaller\TarantoolODBCDriverInstaller\bin\Debug\TarantoolODBCDriverInstaller.msi
-D:\VSProjects\TeamProjects\TarantoolODBCDriverInstaller\TarantoolODBCDriverInstaller\TarantoolODBCDriverInstaller\bin\Debug\TarantoolODBCDriverInstaller.wixpdb
