@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <Fragment>
+    <DirectoryRef Id="TARGETDIR">
+      <Directory Id="System64Folder">
+        <Component Id="Driver64FileComponent" Guid="1C060AEE-4975-4427-80DA-256281BD3F0E" Permanent="no" SharedDllRefCount="no" Transitive="no" Win64="yes">
+          <File Id="Driver64File" DiskId="1" Hidden="no" ReadOnly="no" TrueType="no" System="no" Vital="yes" Name="Driver_x64.dll" Source="InstallFiles\Driver_x64.dll" KeyPath="yes" />
+        </Component>
+      </Directory>
+    </DirectoryRef>
+  </Fragment>
+  
+  <Fragment>
+    <DirectoryRef Id="TARGETDIR">
+      <Directory Id="SystemFolder">
+        <Component Id="Driver32FileComponent" Guid="7EDBD8B2-7ECC-4A37-BA3A-98B19E230FA3" Permanent="no" SharedDllRefCount="no" Transitive="no" Win64="no">
+          <File Id="Driver32File" DiskId="1" Hidden="no" ReadOnly="no" TrueType="no" System="no" Vital="yes" Name="Driver_x86.dll" Source="InstallFiles\Driver_x86.dll" KeyPath="yes">
+          </File>        
+        </Component>
+      </Directory>
+    </DirectoryRef>
+  </Fragment>
+
+  <Fragment>
+    <ComponentGroup Id="Driver64RegistryKeyComponents">
+      <Component Id="Driver64RegistryTarantoolKeyComponent" Guid="*" Transitive="no" Directory="TARGETDIR" Win64="yes">
+        <RegistryKey Root="HKLM" Key="SOFTWARE\ODBC\ODBCINST.INI\Tarantool" ForceCreateOnInstall="yes" ForceDeleteOnUninstall="yes">
+          <RegistryValue Type="string" Name="APILevel" Value="1" />
+          <RegistryValue Type="string" Name="ConnectFunctions" Value="YYN" />
+          <RegistryValue Type="expandable" Name="Driver" Value="C:\Windows\System32\Driver_x64.dll" />
+          <RegistryValue Type="expandable" Name="Setup" Value="C:\Windows\System32\Driver_x64.dll" />
+          <RegistryValue Type="string" Name="DriverODBCVer" Value="03.80" />
+          <RegistryValue Type="string" Name="FileUsage" Value="0" />
+          <RegistryValue Type="string" Name="SQLLevel" Value="1" />
+          <RegistryValue Type="integer" Name="UsageCount" Value="0" />
+        </RegistryKey>
+      </Component>
+      <Component Id="Driver64RegistryODBCDriverKeyComponent" Guid="*" Transitive="no" Directory="TARGETDIR" Win64="yes">
+        <RegistryKey Root="HKLM" Key="SOFTWARE\ODBC\ODBCINST.INI\ODBC Drivers" ForceCreateOnInstall="yes" ForceDeleteOnUninstall="no">
+          <RegistryValue Type="string" Name="Tarantool" Value="Installed" />
+        </RegistryKey>
+      </Component>
+    </ComponentGroup>
+  </Fragment>
+  
+  <Fragment>
+    <ComponentGroup Id="Driver32RegistryKeyComponents">
+      <Component Id="Driver32RegistryTarantoolKeyComponent" Guid="*" Transitive="no" Directory="TARGETDIR" Win64="no">
+        <RegistryKey Root="HKLM" Key="SOFTWARE\ODBC\ODBCINST.INI\Tarantool" ForceCreateOnInstall="yes" ForceDeleteOnUninstall="yes">
+          <RegistryValue Type="string" Name="APILevel" Value="1" />
+          <RegistryValue Type="string" Name="ConnectFunctions" Value="YYN" />
+          <RegistryValue Type="expandable" Name="Driver" Value="[DRIVER32_PATH]" />
+          <RegistryValue Type="expandable" Name="Setup" Value="[DRIVER32_PATH]" />
+          <RegistryValue Type="string" Name="DriverODBCVer" Value="03.80" />
+          <RegistryValue Type="string" Name="FileUsage" Value="0" />
+          <RegistryValue Type="string" Name="SQLLevel" Value="1" />
+          <RegistryValue Type="integer" Name="UsageCount" Value="0" />
+        </RegistryKey>
+      </Component>
+      <Component Id="Driver32RegistryODBCDriverKyeComponent" Guid="*" Transitive="no" Directory="TARGETDIR" Win64="no">
+        <RegistryKey Root="HKLM" Key="SOFTWARE\ODBC\ODBCINST.INI\ODBC Drivers" ForceCreateOnInstall="yes" ForceDeleteOnUninstall="no">
+          <RegistryValue Type="string" Name="Tarantool" Value="Installed" />
+        </RegistryKey>
+      </Component>
+    </ComponentGroup>
+  </Fragment>
+</Wix>
