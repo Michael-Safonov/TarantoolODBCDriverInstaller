@@ -13,6 +13,12 @@
     <OutputPath>bin\$(Configuration)\</OutputPath>
     <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
     <DefineConstants>Debug</DefineConstants>
+    <Cultures>ru-RU;en-US</Cultures>
+    <SuppressSpecificWarnings>
+    </SuppressSpecificWarnings>
+    <SuppressValidation>False</SuppressValidation>
+    <CompilerAdditionalOptions />
+    <SuppressIces>ICE80;</SuppressIces>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
     <OutputPath>bin\$(Configuration)\</OutputPath>
@@ -28,20 +34,30 @@
     <IntermediateOutputPath>obj\$(Platform)\$(Configuration)\</IntermediateOutputPath>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Features.wxs" />
+    <Compile Include="Files.wxs" />
     <Compile Include="Product.wxs" />
-    <Compile Include="StandardUI.wxs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="InstallFiles" />
+    <Folder Include="Lib" />
     <Folder Include="Resources\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="InstallFiles\Driver_x64.dll" />
     <Content Include="InstallFiles\Driver_x86.dll" />
     <Content Include="InstallFiles\License.rtf" />
+    <Content Include="Lib\WixUIExtension.dll" />
     <Content Include="Resources\WiXDefBannerBitmap.bmp" />
     <Content Include="Resources\WiXNewFolderBtn.ico" />
     <Content Include="Resources\WiXUpFolderBtn.ico" />
+    <Content Include="Variables.wxi" />
+  </ItemGroup>
+  <ItemGroup>
+    <WixExtension Include="WixUIExtension">
+      <HintPath>Lib\WixUIExtension.dll</HintPath>
+      <Name>WixUIExtension</Name>
+    </WixExtension>
   </ItemGroup>
   <Import Project="$(WixTargetsPath)" Condition=" '$(WixTargetsPath)' != '' " />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\WiX\v3.x\Wix.targets" Condition=" '$(WixTargetsPath)' == '' AND Exists('$(MSBuildExtensionsPath32)\Microsoft\WiX\v3.x\Wix.targets') " />

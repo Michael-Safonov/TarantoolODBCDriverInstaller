@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Include>
+  <?define ProductName="TarantoolODBCDriver" ?>
+  <?define ProductVersion="1.0.0.0" ?>
+  <!--<?define ProductCode="b7bc7c6f-9a4e-4973-be84-eca8e3427c97"?>-->
+  <?define UpgradeCode="35a8fe49-4b51-43cc-9393-214c7cce8523"?>
+  <?define Manufacturer="Tarantool"?>
+  <?define Win64flag = 1?>
+</Include>
