@@ -2,38 +2,24 @@
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
   <?include Variables.wxi?>
   
-  <Product Id="*" Name="$(var.ProductName)" Language="1033" Version="1.0.0.0" Manufacturer="Tarantool" UpgradeCode="35a8fe49-4b51-43cc-9393-214c7cce8523" Codepage="1252">
-    <Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" Description="Tarantool ODBC Driver installer" SummaryCodepage="1252" Platform="x86" />
+  <Product Id="*" Name="$(var.ProductName)" Language="!(loc.ID)" Version="$(var.ProductVersion)" Manufacturer="Tarantool" UpgradeCode="35a8fe49-4b51-43cc-9393-214c7cce8523">
+    <Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" Description="Tarantool ODBC Driver installer" Platform="x86" Languages="0,1033,1049," />
     
-    <CustomAction Id="PreventDowngrading" Error="Newer version already installed." />
-    <Property Id="ARPHELPLINK" Value="http:\tarantool.com" />
-    
-    <Upgrade Id="35a8fe49-4b51-43cc-9393-214c7cce8523">
-      <UpgradeVersion Maximum="1.0.0.0" Property="OLDPRODUCTFOUND" OnlyDetect="no" IncludeMinimum="yes" IncludeMaximum="no" Language="1033" />
-      <UpgradeVersion Minimum="1.0.0.0" Property="NEWPRODUCTFOUND" OnlyDetect="yes" IncludeMinimum="no" Language="1033" />
-    </Upgrade>
-    
-    <MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
+    <MajorUpgrade AllowDowngrades="no" DowngradeErrorMessage="!(loc.NewerVersionInstalled)" AllowSameVersionUpgrades="no" />
     
     <MediaTemplate EmbedCab="yes" />
-
     <WixVariable Id="WixUILicenseRtf" Value="InstallFiles/License.rtf" />
-    
     <Directory Id="TARGETDIR" Name="SourceDir" />
-
     <!-- Property-Action Definition-->
     <CustomAction Id="SetDriver32PathForWin64" Property="DRIVER32_PATH" Value="C:\Windows\SysWOW64\Driver_x86.dll" />
     <CustomAction Id="SetDriver32PathForWin32" Property="DRIVER32_PATH" Value="C:\Windows\System32\Driver_x86.dll" />
-
     <!-- Conditionally execute the property actions -->
     <InstallExecuteSequence>
       <Custom Action="SetDriver32PathForWin64" Before="InstallFiles"><![CDATA[VersionNT64]]></Custom>
       <Custom Action="SetDriver32PathForWin32" Before="InstallFiles"><![CDATA[NOT(VersionNT64)]]></Custom>
     </InstallExecuteSequence>
-
     <FeatureRef Id="Driver64Feature" />
     <FeatureRef Id="Driver32Feature" />
-    
-    <UIRef Id="WixUI_CustomMondo"/>
+    <UIRef Id="WixUI_CustomMondo" />
   </Product>
 </Wix>
