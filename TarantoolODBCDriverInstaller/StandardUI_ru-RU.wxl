@@ -1,0 +1,475 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WixLocalization Culture="ru-RU" Language="1049" Codepage="1251" xmlns="http://schemas.microsoft.com/wix/2006/localization">
+  <String Id="ID">1049</String>
+  <String Id="LangID">StdUI_RUS</String>
+
+  <String Id="NewerVersionInstalled"><![CDATA[Более поздняя версия [ProductName] уже установлена. Программа установки завершит работу.]]></String>
+  
+  <!-- UserInterface dialogs -->
+  <String Id="StdUI_MenuLocal"><![CDATA[Будет установлен на локальный жесткий диск]]></String>
+  <String Id="StdUI_SelParentCostNegNeg"><![CDATA[Компонент освободит [1] на жестком диске. В нем выбрано [2] из [3] подкомпонентов. Подкомпоненты освободят [4] на вашем жестком диске.]]></String>
+  <String Id="StdUI_SelNetworkNetwork"><![CDATA[Этот компонент будет по-прежнему доступен для запуска из сети]]></String>
+  <String Id="StdUI_SelNetworkLocal"><![CDATA[Запуск из сети будет заменен для этого компонента на запуск с локального жесткого диска]]></String>
+  <String Id="StdUI_SelNetworkAdvertise"><![CDATA[Этот компонент больше не будет выполняться через сеть и будет установлен при необходимости]]></String>
+  <String Id="StdUI_SelNetworkAbsent"><![CDATA[Этот компонент будет полностью удален, и его нельзя будет запустить из сети]]></String>
+  <String Id="StdUI_SelAbsentAbsent"><![CDATA[Компонент не будет установлен]]></String>
+  <String Id="StdUI_ScriptInProgress"><![CDATA[Идет сбор данных...]]></String>
+  <String Id="StdUI_MenuCD"><![CDATA[Будет установлен для выполнения с компакт-диска]]></String>
+  <String Id="StdUI_SelChildCostNeg"><![CDATA[Компонент освободит [1] на жестком диске.]]></String>
+  <String Id="StdUI_SelCDLocal"><![CDATA[Запуск с компакт-диска будет заменен для этого компонента на запуск с локального жесткого диска]]></String>
+  <String Id="StdUI_MenuAbsent"><![CDATA[Этот компонент будет полностью недоступен]]></String>
+  <String Id="StdUI_SelCDAdvertise"><![CDATA[Этот компонент больше не будет выполняться с компакт-диска и будет установлен при необходимости]]></String>
+  <String Id="StdUI_MenuAllNetwork"><![CDATA[Этот компонент будет полностью установлен для выполнения через сеть]]></String>
+  <String Id="StdUI_SelLocalNetwork"><![CDATA[Компонент будет удален с локального жесткого диска, однако будет доступен для запуска из сети]]></String>
+  <String Id="StdUI_SelAdvertiseNetwork"><![CDATA[Этот компонент будет доступен для выполнения через сеть]]></String>
+  <String Id="StdUI_MenuAllLocal"><![CDATA[Этот компонент будет установлен на локальный жесткий диск]]></String>
+  <String Id="StdUI_SelAdvertiseLocal"><![CDATA[Этот компонент будет установлен на локальном жестком диске]]></String>
+  <String Id="StdUI_MenuAllCD"><![CDATA[Этот компонент будет полностью установлен для выполнения через сеть]]></String>
+  <String Id="StdUI_SelCDAbsent"><![CDATA[Компонент будет полностью удален, его нельзя будет запустить с компакт-диска]]></String>
+  <String Id="StdUI_MenuAdvertise"><![CDATA[Компонент будет установлен при необходимости]]></String>
+  <String Id="StdUI_SelAdvertiseCD"><![CDATA[Этот компонент можно будет запустить с компакт-диска]]></String>
+  <String Id="StdUI_bytes"><![CDATA[байт]]></String>
+  <String Id="StdUI_SelAdvertiseAdvertise"><![CDATA[Будет установлен при необходимости]]></String>
+  <String Id="StdUI_MB"><![CDATA[МБ]]></String>
+  <String Id="StdUI_SelAdvertiseAbsent"><![CDATA[Этот компонент будет полностью недоступен]]></String>
+  <String Id="StdUI_KB"><![CDATA[КБ]]></String>
+  <String Id="StdUI_GB"><![CDATA[ГБ]]></String>
+  <String Id="StdUI_SelAbsentNetwork"><![CDATA[Этот компонент будет установлен для запуска из сети]]></String>
+  <String Id="StdUI_SelAbsentCD"><![CDATA[Компонент будет установлен для запуска с компакт-диска]]></String>
+  <String Id="StdUI_SelAbsentAdvertise"><![CDATA[Этот компонент будет установлен при необходимости]]></String>
+  <String Id="StdUI_SelAbsentLocal"><![CDATA[Этот компонент будет установлен на локальный жесткий диск]]></String>
+  <String Id="StdUI_SelCDCD"><![CDATA[Этот компонент будет по-прежнему доступен для запуска с компакт-диска]]></String>
+  <String Id="StdUI_NewFolder"><![CDATA[Папка|Новая папка]]></String>
+  <String Id="StdUI_MenuNetwork"><![CDATA[Будет установлен для выполнения через сеть]]></String>
+  <String Id="StdUI_SelLocalCD"><![CDATA[Компонент будет удален с локального жесткого диска, однако будет доступен для запуска с компакт-диска]]></String>
+  <String Id="StdUI_SelLocalAbsent"><![CDATA[Компонент будет полностью удален]]></String>
+  <String Id="StdUI_SelCostPending"><![CDATA[Вычисление необходимого объема для этого компонента...]]></String>
+  <String Id="StdUI_SelLocalLocal"><![CDATA[Этот компонент будет по-прежнему доступен на локальном жестком диске]]></String>
+  <String Id="StdUI_SelChildCostPos"><![CDATA[Для компонента требуется [1] на жестком диске.]]></String>
+  <String Id="StdUI_SelLocalAdvertise"><![CDATA[Этот компонент будет удален с локального жесткого диска, но его можно будет установить при необходимости]]></String>
+  <String Id="StdUI_SelParentCostNegPos"><![CDATA[Компонент освободит [1] на жестком диске. В нем выбрано [2] из [3] подкомпонентов. Для подкомпонентов требуется [4] на вашем жестком диске.]]></String>
+  <String Id="StdUI_SelParentCostPosNeg"><![CDATA[Для компонента требуется [1] на жестком диске. В нем выбрано [2] из [3] подкомпонентов. Подкомпоненты освободят [4] на вашем жестком диске.]]></String>
+  <String Id="StdUI_SelParentCostPosPos"><![CDATA[Для компонента требуется [1] на жестком диске. В нем выбрано [2] из [3] подкомпонентов. Для подкомпонентов требуется [4] на вашем жестком диске.]]></String>
+  <String Id="StdUI_TimeRemaining"><![CDATA[Оставшееся время: {[1] мин }{[2] сек}]]></String>
+  <String Id="StdUI_VolumeCostAvailable"><![CDATA[Доступно]]></String>
+  <String Id="StdUI_VolumeCostDifference"><![CDATA[Разница]]></String>
+  <String Id="StdUI_VolumeCostRequired"><![CDATA[Требуется]]></String>
+  <String Id="StdUI_VolumeCostSize"><![CDATA[Размер диска]]></String>
+  <String Id="StdUI_VolumeCostVolume"><![CDATA[Объем]]></String>
+  <!-- common controls -->
+  <String Id="StdUI_ButtonNext"><![CDATA[Д&алее >]]></String>
+  <String Id="StdUI_ButtonBack"><![CDATA[< &Назад]]></String>
+  <String Id="StdUI_ButtonCancel"><![CDATA[Отмена]]></String>
+  <String Id="StdUI_ButtonClose"><![CDATA[&Закрыть]]></String>
+  <String Id="StdUI_ButtonFinish"><![CDATA[&Готово]]></String>
+  <!-- WelcomeDlg Dialog -->
+  <String Id="StdUI_Welcome_Title"><![CDATA[[ProductName]]]></String>
+  <String Id="StdUI_Welcome_CopyrightWarningText"><![CDATA[ВНИМАНИЕ! Данная программа защищена законами об авторских правах и международными соглашениями. Незаконное воспроизведение или распространение данной программы или любой ее части влечет гражданскую и уголовную ответственность.]]></String>
+  <String Id="StdUI_Welcome_BannerText"><![CDATA[Вас приветствует мастер установки "[ProductName]"]]></String>
+  <String Id="StdUI_Welcome_WelcomeText"><![CDATA[Установщик проведет вас через все этапы установки "[ProductName]" на вашем компьютере.
+
+Для продолжения нажмите кнопку "Далее".]]></String>
+  <String Id="StdUI_Welcome_ButtonNext"><![CDATA[Д&алее >]]></String>
+  <String Id="StdUI_Welcome_ButtonBack"><![CDATA[< &Назад]]></String>
+  <String Id="StdUI_Welcome_ButtonCancel"><![CDATA[Отмена]]></String>
+  <!-- WebFolderDlg Dialog -->
+  <String Id="StdUI_WebFolder_Title"><![CDATA[[ProductName]]]></String>
+  <String Id="StdUI_WebFolder_SiteLabel"><![CDATA[В&еб-узел:]]></String>
+  <String Id="StdUI_WebFolder_DiskCost"><![CDATA[&Место на дисках...]]></String>
+  <String Id="StdUI_WebFolder_VDirLabel"><![CDATA[&Виртуальный каталог:]]></String>
+  <String Id="StdUI_WebFolder_AppPoolsLabel"><![CDATA[&Пул приложений:]]></String>
+  <String Id="StdUI_WebFolder_Heading"><![CDATA[Выбор адреса для установки]]></String>
+  <String Id="StdUI_WebFolder_Body1"><![CDATA[Установщик установит "[ProductName]" в следующее веб-расположение. 
+
+Для установки в это веб-расположение нажмите кнопку "Далее". Для установки в другое веб-расположение введите нужный путь ниже.]]></String>
+  <String Id="StdUI_WebFolder_ButtonNext"><![CDATA[Д&алее >]]></String>
+  <String Id="StdUI_WebFolder_ButtonBack"><![CDATA[< &Назад]]></String>
+  <String Id="StdUI_WebFolder_ButtonCancel"><![CDATA[Отмена]]></String>
+  <!-- SplashDlg Dialog -->
+  <String Id="StdUI_Splash_Title"><![CDATA[[ProductName]]]></String>
+  <String Id="StdUI_Splash_ButtonNext"><![CDATA[Д&алее >]]></String>
+  <String Id="StdUI_Splash_ButtonBack"><![CDATA[< &Назад]]></String>
+  <String Id="StdUI_Splash_ButtonCancel"><![CDATA[Отмена]]></String>
+  <!-- ProgressDlg Dialog -->
+  <String Id="StdUI_Progress_Title"><![CDATA[[ProductName]]]></String>
+  <String Id="StdUI_Progress_ProgressLabelText"><![CDATA[Пожалуйста, подождите...]]></String>
+  <String Id="StdUI_Progress_InstalledBodyText"><![CDATA[Идет установка "[ProductName]".]]></String>
+  <String Id="StdUI_Progress_RemovedBodyText"><![CDATA[Идет удаление "[ProductName]".]]></String>
+  <String Id="StdUI_Progress_InstalledBannerText"><![CDATA[Установка "[ProductName]"]]></String>
+  <String Id="StdUI_Progress_RemoveBannerText"><![CDATA[Удаление "[ProductName]"]]></String>
+  <String Id="StdUI_Progress_ButtonNext"><![CDATA[Д&алее >]]></String>
+  <String Id="StdUI_Progress_ButtonBack"><![CDATA[< &Назад]]></String>
+  <String Id="StdUI_Progress_ButtonCancel"><![CDATA[Отмена]]></String>
+  <!-- RegisterDlg Dialog -->
+  <String Id="StdUI_Register_Title"><![CDATA[[ProductName]]]></String>
+  <String Id="StdUI_Register_RegisterButton"><![CDATA[&Зарегистрировать...]]></String>
+  <String Id="StdUI_Register_BannerText"><![CDATA[Регистрация "[ProductName]"]]></String>
+  <String Id="StdUI_Register_Body1"><![CDATA[Пожалуйста, зарегистрируйте свою копию "[ProductName]".
+
+Чтобы начать процесс регистрации, нажмите кнопку "Зарегистрировать". Чтобы сейчас пропустить регистрацию, нажмите кнопку "Далее".]]></String>
+  <String Id="StdUI_Register_ButtonNext"><![CDATA[Д&алее >]]></String>
+  <String Id="StdUI_Register_ButtonBack"><![CDATA[< &Назад]]></String>
+  <String Id="StdUI_Register_ButtonCancel"><![CDATA[Отмена]]></String>
+  <!-- ReadmeDlg Dialog -->
+  <String Id="StdUI_Readme_Title"><![CDATA[[ProductName]]]></String>
+  <String Id="StdUI_Readme_BannerText"><![CDATA[Сведения о "[ProductName]"]]></String>
+  <String Id="StdUI_Readme_ButtonNext"><![CDATA[Д&алее >]]></String>
+  <String Id="StdUI_Readme_ButtonBack"><![CDATA[< &Назад]]></String>
+  <String Id="StdUI_Readme_ButtonCancel"><![CDATA[Отмена]]></String>
+  <!-- LicenseDlg Dialog -->
+  <String Id="StdUI_License_Title"><![CDATA[[ProductName]]]></String>
+  <String Id="StdUI_License_NotAgree"><![CDATA[Н&е принимаю]]></String>
+  <String Id="StdUI_License_Agree"><![CDATA[&Принимаю]]></String>
+  <String Id="StdUI_License_BannerText"><![CDATA[Лицензионное соглашение]]></String>
+  <String Id="StdUI_License_BodyText"><![CDATA[Прочтите, пожалуйста, это лицензионное соглашение. Если вы принимаете условия лицензионного соглашения, выберите вариант "Принимаю" и нажмите кнопку "Далее". В противном случае нажмите кнопку "Отмена".]]></String>
+  <String Id="StdUI_License_ButtonNext"><![CDATA[Д&алее >]]></String>
+  <String Id="StdUI_License_ButtonBack"><![CDATA[< &Назад]]></String>
+  <String Id="StdUI_License_ButtonCancel"><![CDATA[Отмена]]></String>
+  <!-- FolderDlg Dialog -->
+  <String Id="StdUI_Folder_Title"><![CDATA[[ProductName]]]></String>
+  <String Id="StdUI_Folder_Everyone"><![CDATA[для все&х]]></String>
+  <String Id="StdUI_Folder_JustMe"><![CDATA[&только для меня]]></String>
+  <String Id="StdUI_Folder_FolderLabel"><![CDATA[&Папка:]]></String>
+  <String Id="StdUI_Folder_BrowseButton"><![CDATA[О&бзор...]]></String>
+  <String Id="StdUI_Folder_DiskCostButton"><![CDATA[&Место на дисках...]]></String>
+  <String Id="StdUI_Folder_BannerText"><![CDATA[Выбор папки для установки]]></String>
+  <String Id="StdUI_Folder_Body"><![CDATA[Установщик установит "[ProductName]" в следующую папку.
+
+Чтобы воспользоваться данной папкой, нажмите кнопку "Далее". Чтобы сменить папку, введите нужный путь или выберите ее, нажав кнопку "Обзор".]]></String>
+  <String Id="StdUI_Folder_AllUsersText"><![CDATA[Установить "[ProductName]" только для меня или для всех, кто использует этот компьютер:]]></String>
+  <String Id="StdUI_Folder_ButtonNext"><![CDATA[Д&алее >]]></String>
+  <String Id="StdUI_Folder_ButtonBack"><![CDATA[< &Назад]]></String>
+  <String Id="StdUI_Folder_ButtonCancel"><![CDATA[Отмена]]></String>
+  <!-- FinishedDlg Dialog -->
+  <String Id="StdUI_Finished_Title"><![CDATA[[ProductName]]]></String>
+  <String Id="StdUI_Finished_BannerText"><![CDATA[Установка завершена]]></String>
+  <String Id="StdUI_Finished_BodyTextRemove"><![CDATA[Продукт "[ProductName]" успешно удален.
+
+Для выхода нажмите кнопку "Закрыть".]]></String>
+  <String Id="StdUI_Finished_UpdateText"><![CDATA[Воспользуйтесь Windows Update с целью проверки наличия важных обновлений для .NET Framework.]]></String>
+  <String Id="StdUI_Finished_BodyText"><![CDATA[Продукт "[ProductName]" успешно установлен.
+
+Для выхода нажмите кнопку "Закрыть".]]></String>
+  <String Id="StdUI_Finished_ButtonClose"><![CDATA[&Закрыть]]></String>
+  <String Id="StdUI_Finished_ButtonCancel"><![CDATA[Отмена]]></String>
+  <String Id="StdUI_Finished_ButtonBack"><![CDATA[< &Назад]]></String>
+  <!-- FinishDialogs -->
+  <String Id="StdUI_MaintenanceAction_Repair"><![CDATA[&Восстановить "[ProductName]"]]></String>
+  <String Id="StdUI_MaintenanceAction_Remove"><![CDATA[&Удалить "[ProductName]"]]></String>
+  <String Id="StdUI_UserExit_Title"><![CDATA[[ProductName]]]></String>
+  <String Id="StdUI_UserExit_BannerText"><![CDATA[Установка прервана]]></String>
+  <String Id="StdUI_UserExit_BodyTextRemove"><![CDATA[Работа установщика была прервана до завершения удаления "[ProductName]". Чтобы повторить попытку, следует перезапустить установщик.
+
+Для выхода нажмите кнопку "Закрыть".]]></String>
+  <String Id="StdUI_UserExit_BodyTextInstall"><![CDATA[Работа установщика была прервана до завершения установки "[ProductName]". Чтобы повторить попытку, следует перезапустить установщик.]]></String>
+  <String Id="StdUI_UserExit_ButtonClose"><![CDATA[&Закрыть]]></String>
+  <String Id="StdUI_UserExit_ButtonCancel"><![CDATA[Отмена]]></String>
+  <String Id="StdUI_UserExit_ButtonBack"><![CDATA[< &Назад]]></String>
+  <String Id="StdUI_FatalError_Title"><![CDATA[[ProductName]]]></String>
+  <String Id="StdUI_FatalError_BannerText"><![CDATA[Установка не завершена]]></String>
+  <String Id="StdUI_FatalError_BodyTextRemove"><![CDATA[Работа установщика была прервана до завершения установки "[ProductName]". Чтобы повторить попытку, следует перезапустить установщик.
+
+Для выхода нажмите кнопку "Закрыть".]]></String>
+  <String Id="StdUI_FatalError_BodyTextInstall"><![CDATA[Работа установщика была прервана до завершения удаления "[ProductName]". Чтобы повторить попытку, следует перезапустить установщик.
+
+Для выхода нажмите кнопку "Закрыть".]]></String>
+  <String Id="StdUI_FatalError_ButtonClose"><![CDATA[&Закрыть]]></String>
+  <String Id="StdUI_FatalError_ButtonCancel"><![CDATA[Отмена]]></String>
+  <String Id="StdUI_FatalError_ButtonBack"><![CDATA[< &Назад]]></String>
+  <String Id="StdUI_Maintenance_Title"><![CDATA[[ProductName]]]></String>
+  <String Id="StdUI_Maintenance_BannerText"><![CDATA[Вас приветствует мастер установки "[ProductName]"]]></String>
+  <String Id="StdUI_Maintenance_BodyText"><![CDATA[Выберите, следует ли восстановить или удалить "[ProductName]".]]></String>
+  <String Id="StdUI_Maintenance_ButtonFinish"><![CDATA[&Готово]]></String>
+  <String Id="StdUI_Maintenance_ButtonCancel"><![CDATA[Отмена]]></String>
+  <String Id="StdUI_Maintenance_ButtonBack"><![CDATA[< &Назад]]></String>
+  <String Id="StdUI_Resume_Title"><![CDATA[[ProductName]]]></String>
+  <String Id="StdUI_Resume_BannerText"><![CDATA[Вас приветствует мастер установки "[ProductName]"]]></String>
+  <String Id="StdUI_Resume_BodyText"><![CDATA[Установщик восстановит "[ProductName]" на вашем компьютере.
+
+Для продолжения нажмите кнопку "Готово".]]></String>
+  <String Id="StdUI_Resume_ButtonFinish"><![CDATA[&Готово]]></String>
+  <String Id="StdUI_Resume_ButtonCancel"><![CDATA[Отмена]]></String>
+  <String Id="StdUI_Resume_ButtonBack"><![CDATA[< &Назад]]></String>
+  <!-- CustomText1 Dialogs -->
+  <String Id="StdUI_CustomText1_Title"><![CDATA[[ProductName]]]></String>
+  <String Id="StdUI_CustomText1_Label1"><![CDATA[Edit1:]]></String>
+  <String Id="StdUI_CustomText1_Label2"><![CDATA[Edit2:]]></String>
+  <String Id="StdUI_CustomText1_Label3"><![CDATA[Edit3:]]></String>
+  <String Id="StdUI_CustomText1_Label4"><![CDATA[Edit4:]]></String>
+  <String Id="StdUI_CustomText1_BodyText"><![CDATA[BodyText]]></String>
+  <String Id="StdUI_CustomText1_BannerText"><![CDATA[BannerText]]></String>
+  <String Id="StdUI_CustomText1_ButtonNext"><![CDATA[Д&алее >]]></String>
+  <String Id="StdUI_CustomText1_ButtonBack"><![CDATA[< &Назад]]></String>
+  <String Id="StdUI_CustomText1_ButtonCancel"><![CDATA[Отмена]]></String>
+  <!-- CustomText2 Dialogs -->
+  <String Id="StdUI_CustomText2_Title"><![CDATA[[ProductName]]]></String>
+  <String Id="StdUI_CustomText2_Label1"><![CDATA[Edit1:]]></String>
+  <String Id="StdUI_CustomText2_Label2"><![CDATA[Edit2:]]></String>
+  <String Id="StdUI_CustomText2_Label3"><![CDATA[Edit3:]]></String>
+  <String Id="StdUI_CustomText2_Label4"><![CDATA[Edit4:]]></String>
+  <String Id="StdUI_CustomText2_BodyText"><![CDATA[BodyText]]></String>
+  <String Id="StdUI_CustomText2_BannerText"><![CDATA[BannerText]]></String>
+  <String Id="StdUI_CustomText2_ButtonNext"><![CDATA[Д&алее >]]></String>
+  <String Id="StdUI_CustomText2_ButtonBack"><![CDATA[< &Назад]]></String>
+  <String Id="StdUI_CustomText2_ButtonCancel"><![CDATA[Отмена]]></String>
+  <!-- CustomText3 Dialogs -->
+  <String Id="StdUI_CustomText3_Title"><![CDATA[[ProductName]]]></String>
+  <String Id="StdUI_CustomText3_Label1"><![CDATA[Edit1:]]></String>
+  <String Id="StdUI_CustomText3_Label2"><![CDATA[Edit2:]]></String>
+  <String Id="StdUI_CustomText3_Label3"><![CDATA[Edit3:]]></String>
+  <String Id="StdUI_CustomText3_Label4"><![CDATA[Edit4:]]></String>
+  <String Id="StdUI_CustomText3_BodyText"><![CDATA[BodyText]]></String>
+  <String Id="StdUI_CustomText3_BannerText"><![CDATA[BannerText]]></String>
+  <String Id="StdUI_CustomText3_ButtonNext"><![CDATA[Д&алее >]]></String>
+  <String Id="StdUI_CustomText3_ButtonBack"><![CDATA[< &Назад]]></String>
+  <String Id="StdUI_CustomText3_ButtonCancel"><![CDATA[Отмена]]></String>
+  <!-- CustomerInfoDlg Dialog -->
+  <String Id="StdUI_CustomerInfo_Title"><![CDATA[[ProductName]]]></String>
+  <String Id="StdUI_CustomerInfo_NameLabel"><![CDATA[Им&я:]]></String>
+  <String Id="StdUI_CustomerInfo_OrganizationLabel"><![CDATA[Ор&ганизация:]]></String>
+  <String Id="StdUI_CustomerInfo_SerialLabel"><![CDATA[С&ерийный номер:]]></String>
+  <String Id="StdUI_CustomerInfo_BannerText"><![CDATA[Сведения о пользователе]]></String>
+  <String Id="StdUI_CustomerInfo_SerialBodyText"><![CDATA[Введите свой серийный номер в следующее поле. Установщик будет использовать эти сведения при последующих установках.]]></String>
+  <String Id="StdUI_CustomerInfo_OrganizationBodyText"><![CDATA[Введите свое имя и название своей организации в следующие поля. Установщик будет использовать эти сведения при последующих установках.]]></String>
+  <String Id="StdUI_CustomerInfo_NameBodyText"><![CDATA[Введите свое имя в следующее поле. Установщик будет использовать эти сведения при последующих установках.]]></String>
+  <String Id="StdUI_CustomerInfo_ButtonNext"><![CDATA[Д&алее >]]></String>
+  <String Id="StdUI_CustomerInfo_ButtonBack"><![CDATA[< &Назад]]></String>
+  <String Id="StdUI_CustomerInfo_ButtonCancel"><![CDATA[Отмена]]></String>
+  <!-- CustomCheck1 Dialogs -->
+  <String Id="StdUI_CustomCheck1_Title"><![CDATA[[ProductName]]]></String>
+  <String Id="StdUI_CustomCheck1_Checkbox1"><![CDATA[Checkbox1]]></String>
+  <String Id="StdUI_CustomCheck1_Checkbox2"><![CDATA[Checkbox2]]></String>
+  <String Id="StdUI_CustomCheck1_Checkbox3"><![CDATA[Checkbox3]]></String>
+  <String Id="StdUI_CustomCheck1_Checkbox4"><![CDATA[Checkbox4]]></String>
+  <String Id="StdUI_CustomCheck1_BodyText"><![CDATA[BodyText]]></String>
+  <String Id="StdUI_CustomCheck1_BannerText"><![CDATA[BannerText]]></String>
+  <String Id="StdUI_CustomCheck1_ButtonNext"><![CDATA[Д&алее >]]></String>
+  <String Id="StdUI_CustomCheck1_ButtonBack"><![CDATA[< &Назад]]></String>
+  <String Id="StdUI_CustomCheck1_ButtonCancel"><![CDATA[Отмена]]></String>
+  <!-- CustomCheck2 Dialogs -->
+  <String Id="StdUI_CustomCheck2_Title"><![CDATA[[ProductName]]]></String>
+  <String Id="StdUI_CustomCheck2_Checkbox1"><![CDATA[Checkbox1]]></String>
+  <String Id="StdUI_CustomCheck2_Checkbox2"><![CDATA[Checkbox2]]></String>
+  <String Id="StdUI_CustomCheck2_Checkbox3"><![CDATA[Checkbox3]]></String>
+  <String Id="StdUI_CustomCheck2_Checkbox4"><![CDATA[Checkbox4]]></String>
+  <String Id="StdUI_CustomCheck2_BodyText"><![CDATA[BodyText]]></String>
+  <String Id="StdUI_CustomCheck2_BannerText"><![CDATA[BannerText]]></String>
+  <String Id="StdUI_CustomCheck2_ButtonNext"><![CDATA[Д&алее >]]></String>
+  <String Id="StdUI_CustomCheck2_ButtonBack"><![CDATA[< &Назад]]></String>
+  <String Id="StdUI_CustomCheck2_ButtonCancel"><![CDATA[Отмена]]></String>
+  <!-- CustomCheck3 Dialogs -->
+  <String Id="StdUI_CustomCheck3_Title"><![CDATA[[ProductName]]]></String>
+  <String Id="StdUI_CustomCheck3_Checkbox1"><![CDATA[Checkbox1]]></String>
+  <String Id="StdUI_CustomCheck3_Checkbox2"><![CDATA[Checkbox2]]></String>
+  <String Id="StdUI_CustomCheck3_Checkbox3"><![CDATA[Checkbox3]]></String>
+  <String Id="StdUI_CustomCheck3_Checkbox4"><![CDATA[Checkbox4]]></String>
+  <String Id="StdUI_CustomCheck3_BodyText"><![CDATA[BodyText]]></String>
+  <String Id="StdUI_CustomCheck3_BannerText"><![CDATA[BannerText]]></String>
+  <String Id="StdUI_CustomCheck3_ButtonNext"><![CDATA[Д&алее >]]></String>
+  <String Id="StdUI_CustomCheck3_ButtonBack"><![CDATA[< &Назад]]></String>
+  <String Id="StdUI_CustomCheck3_ButtonCancel"><![CDATA[Отмена]]></String>
+  <!-- CustomButtons2 Dialogs -->
+  <String Id="StdUI_CustomButton2_Title"><![CDATA[[ProductName]]]></String>
+  <String Id="StdUI_CustomButton2_Button1"><![CDATA[Button1]]></String>
+  <String Id="StdUI_CustomButton2_Button2"><![CDATA[Button2]]></String>
+  <String Id="StdUI_CustomButton2_Button3"><![CDATA[Button3]]></String>
+  <String Id="StdUI_CustomButton2_Button4"><![CDATA[Button4]]></String>
+  <String Id="StdUI_CustomButton2_BodyText"><![CDATA[BodyText]]></String>
+  <String Id="StdUI_CustomButton2_BannerText"><![CDATA[BannerText]]></String>
+  <String Id="StdUI_CustomButton2_ButtonNext"><![CDATA[Д&алее >]]></String>
+  <String Id="StdUI_CustomButton2_ButtonBack"><![CDATA[< &Назад]]></String>
+  <String Id="StdUI_CustomButton2_ButtonCancel"><![CDATA[Отмена]]></String>
+  <!-- CustomButtons3 Dialogs -->
+  <String Id="StdUI_CustomButton3_Title"><![CDATA[[ProductName]]]></String>
+  <String Id="StdUI_CustomButton3_Button1"><![CDATA[Button1]]></String>
+  <String Id="StdUI_CustomButton3_Button2"><![CDATA[Button2]]></String>
+  <String Id="StdUI_CustomButton3_Button3"><![CDATA[Button3]]></String>
+  <String Id="StdUI_CustomButton3_Button4"><![CDATA[Button4]]></String>
+  <String Id="StdUI_CustomButton3_BodyText"><![CDATA[BodyText]]></String>
+  <String Id="StdUI_CustomButton3_BannerText"><![CDATA[BannerText]]></String>
+  <String Id="StdUI_CustomButton3_ButtonNext"><![CDATA[Д&алее >]]></String>
+  <String Id="StdUI_CustomButton3_ButtonBack"><![CDATA[< &Назад]]></String>
+  <String Id="StdUI_CustomButton3_ButtonCancel"><![CDATA[Отмена]]></String>
+  <!-- CustomButtons4 Dialogs -->
+  <String Id="StdUI_CustomButton4_Title"><![CDATA[[ProductName]]]></String>
+  <String Id="StdUI_CustomButton4_Button1"><![CDATA[Button1]]></String>
+  <String Id="StdUI_CustomButton4_Button2"><![CDATA[Button2]]></String>
+  <String Id="StdUI_CustomButton4_Button3"><![CDATA[Button3]]></String>
+  <String Id="StdUI_CustomButton4_Button4"><![CDATA[Button4]]></String>
+  <String Id="StdUI_CustomButton4_BodyText"><![CDATA[BodyText]]></String>
+  <String Id="StdUI_CustomButton4_BannerText"><![CDATA[BannerText]]></String>
+  <String Id="StdUI_CustomButton4_ButtonNext"><![CDATA[Д&алее >]]></String>
+  <String Id="StdUI_CustomButton4_ButtonBack"><![CDATA[< &Назад]]></String>
+  <String Id="StdUI_CustomButton4_ButtonCancel"><![CDATA[Отмена]]></String>
+  <!-- ConfirmDlg Dialog -->
+  <String Id="StdUI_Confirm_Title"><![CDATA[[ProductName]]]></String>
+  <String Id="StdUI_Confirm_BannerText"><![CDATA[Подтверждение установки]]></String>
+  <String Id="StdUI_Confirm_BodyText1"><![CDATA[Установщик готов к установке "[ProductName]" на ваш компьютер.
+
+Для начала установки нажмите кнопку "Далее".]]></String>
+  <String Id="StdUI_Confirm_ButtonNext"><![CDATA[Д&алее >]]></String>
+  <String Id="StdUI_Confirm_ButtonBack"><![CDATA[< &Назад]]></String>
+  <String Id="StdUI_Confirm_ButtonCancel"><![CDATA[Отмена]]></String>
+  <!-- BasicDialogs -->
+  <String Id="StdUI_Cancel_Title"><![CDATA[[ProductName]]]></String>
+  <String Id="StdUI_Cancel_NoButton"><![CDATA[&Нет]]></String>
+  <String Id="StdUI_Cancel_YesButton"><![CDATA[Д&а]]></String>
+  <String Id="StdUI_Cancel_BodyText"><![CDATA[Установка еще не завершена. Вы действительно хотите выполнить выход?]]></String>
+  <String Id="StdUI_ConfirmRemove_Title"><![CDATA[Удаление "[ProductName]"]]></String>
+  <String Id="StdUI_ConfirmRemove_NoButton"><![CDATA[&Нет]]></String>
+  <String Id="StdUI_ConfirmRemove_YesButton"><![CDATA[Д&а]]></String>
+  <String Id="StdUI_ConfirmRemove_BodyText"><![CDATA[Вы решили удалить "[ProductName]" со своего компьютера. Вы действительно хотите удалить его?]]></String>
+  <String Id="StdUI_DiskCost_Title"><![CDATA[Дисковое пространство для "[ProductName]"]]></String>
+  <String Id="StdUI_DiskCost_OKButton"><![CDATA[ОК]]></String>
+  <String Id="StdUI_DiskCost_AvailableBodyText"><![CDATA[В следующем списке указаны диски, на которые можно установить "[ProductName]", а также сведения о имеющемся и необходимом пространстве на каждом из них.]]></String>
+  <String Id="StdUI_DiskCost_RequiredBodyText"><![CDATA[Объем необходимого дискового пространства превышает объем доступного дискового пространства. Выделенные элементы обозначают диски, на которых не хватает необходимого дискового пространства.]]></String>
+  <String Id="StdUI_FilesInUse_Title"><![CDATA[Используемые файлы "[ProductName]"]]></String>
+  <String Id="StdUI_FilesInUse_RetryButton"><![CDATA[Повторить п&опытку]]></String>
+  <String Id="StdUI_FilesInUse_ContinueButton"><![CDATA[Продол&жить]]></String>
+  <String Id="StdUI_FilesInUse_ExitButton"><![CDATA[В&ыход из установки]]></String>
+  <String Id="StdUI_FilesInUse_InstallBodyText"><![CDATA[Установщик должен обновить файлы, используемые в настоящий момент следующими приложениями. Можно либо закрыть указанные приложения и нажать кнопку "Повторить попытку", либо нажать кнопку "Продолжить" с тем, чтобы установщик продолжил установку и заменил эти файлы после перезапуска системы.]]></String>
+  <String Id="StdUI_FilesInUse_RemoveBodyText"><![CDATA[Установщик должен удалить файлы, используемые в настоящий момент следующими приложениями. Можно либо закрыть указанные приложения и нажать кнопку "Повторить попытку", либо нажать кнопку "Продолжить" с тем, чтобы установщик продолжил установку и заменил эти файлы после перезапуска системы.]]></String>
+  <String Id="StdUI_SelectFolder_Title"><![CDATA[Поиск папки]]></String>
+  <String Id="StdUI_SelectFolder_OKButton"><![CDATA[ОК]]></String>
+  <String Id="StdUI_SelectFolder_CancelButton"><![CDATA[Отмена]]></String>
+  <String Id="StdUI_SelectFolder_BrowseText"><![CDATA[&Обзор:]]></String>
+  <String Id="StdUI_SelectFolder_FolderText"><![CDATA[&Папка:]]></String>
+  <String Id="StdUI_Error_Title"><![CDATA[[ProductName]]]></String>
+  <String Id="StdUI_Error_Y"><![CDATA[Д&а]]></String>
+  <String Id="StdUI_Error_A"><![CDATA[В&ыход из установки]]></String>
+  <String Id="StdUI_Error_C"><![CDATA[Отмена]]></String>
+  <String Id="StdUI_Error_I"><![CDATA[Продо&лжить]]></String>
+  <String Id="StdUI_Error_N"><![CDATA[&Нет]]></String>
+  <String Id="StdUI_Error_O"><![CDATA[ОК]]></String>
+  <String Id="StdUI_Error_R"><![CDATA[Повторить п&опытку]]></String>
+  <!-- Base -->
+  <String Id="StdUI_VSDNETURLMSG"><![CDATA[Для установки требуется .NET Framework версии [1]. Установите .NET Framework и перезапустите программу установки. Пакет для установки .NET Framework можно получить по Интернету. Сделать это сейчас?]]></String>
+  <String Id="StdUI_VSDIISMSG"><![CDATA[Для установки требуется Internet Information Server 5.1 или более поздней версии, а также Windows XP или более поздней версии. Эта установка не может быть выполнена на Windows 2000. Установите IIS или более новую операционную систему и перезапустите программу установки.]]></String>
+  <String Id="StdUI_VSDUIANDADVERTISED"><![CDATA[Это приложение не будет установлено по соображениям безопасности. Обратитесь к своему администратору, чтобы изменить режим установки пакета на базовый.]]></String>
+  <String Id="StdUI_VSDNETMSG"><![CDATA[Для установки требуется .NET Framework версии [1]. Установите .NET Framework и перезапустите программу установки.]]></String>
+  <String Id="StdUI_VSDINVALIDURLMSG"><![CDATA[Указанный путь "[2]" недоступен. Возможно, не запущен сервер IIS или путь существует и перенаправлен на другой компьютер. Проверьте состояние виртуального каталога в диспетчере служб Интернета.]]></String>
+  <String Id="StdUI_VSDVERSIONMSG"><![CDATA[Не удается выполнить установку, поскольку на компьютере уже имеется более новая версия этого продукта.]]></String>
+  <!-- AdminWelcomeDlg Dialog -->
+  <String Id="StdUI_AdminWelcome_Title"><![CDATA[[ProductName]]]></String>
+  <String Id="StdUI_AdminWelcome_CopyrightWarningText"><![CDATA[ВНИМАНИЕ! Данная программа защищена законами об авторских правах и международными соглашениями. Незаконное воспроизведение или распространение данной программы или любой ее части влечет гражданскую и уголовную ответственность.]]></String>
+  <String Id="StdUI_AdminWelcome_BannerText"><![CDATA[Вас приветствует мастер сетевой установки "[ProductName]"]]></String>
+  <String Id="StdUI_AdminWelcome_WelcomeText"><![CDATA[Установщик проведет вас через все этапы создания сетевого образа "[ProductName]".
+
+Для продолжения нажмите кнопку "Далее".]]></String>
+  <String Id="StdUI_AdminWelcome_ButtonNext"><![CDATA[Д&алее >]]></String>
+  <String Id="StdUI_AdminWelcome_ButtonBack"><![CDATA[< &Назад]]></String>
+  <String Id="StdUI_AdminWelcome_ButtonCancel"><![CDATA[Отмена]]></String>
+  <!-- AdminWebFolderDlg Dialog -->
+  <String Id="StdUI_AdminWebFolder_Title"><![CDATA[[ProductName]]]></String>
+  <String Id="StdUI_AdminWebFolder_SiteLabel"><![CDATA[В&еб-узел:]]></String>
+  <String Id="StdUI_AdminWebFolder_DiskCost"><![CDATA[&Место на дисках...]]></String>
+  <String Id="StdUI_AdminWebFolder_VDirLabel"><![CDATA[&Виртуальный каталог:]]></String>
+  <String Id="StdUI_AdminWebFolder_AppPoolsLabel"><![CDATA[&Пул приложений:]]></String>
+  <String Id="StdUI_AdminWebFolder_Heading"><![CDATA[Выбор адреса для установки]]></String>
+  <String Id="StdUI_AdminWebFolder_Body1"><![CDATA[Установщик установит "[ProductName]" в следующее веб-расположение. 
+
+Для установки в это веб-расположение нажмите кнопку "Далее". Для установки в другое веб-расположение введите нужный путь ниже.]]></String>
+  <String Id="StdUI_AdminWebFolder_ButtonNext"><![CDATA[Д&алее >]]></String>
+  <String Id="StdUI_AdminWebFolder_ButtonBack"><![CDATA[< &Назад]]></String>
+  <String Id="StdUI_AdminWebFolder_ButtonCancel"><![CDATA[Отмена]]></String>
+  <!-- AdminSplashDlg Dialog -->
+  <String Id="StdUI_AdminSplash_Title"><![CDATA[[ProductName]]]></String>
+  <String Id="StdUI_AdminSplash_ButtonNext"><![CDATA[Д&алее >]]></String>
+  <String Id="StdUI_AdminSplash_ButtonBack"><![CDATA[< &Назад]]></String>
+  <String Id="StdUI_AdminSplash_ButtonCancel"><![CDATA[Отмена]]></String>
+  <!-- AdminReadmeDlg Dialog -->
+  <String Id="StdUI_AdminReadme_Title"><![CDATA[[ProductName]]]></String>
+  <String Id="StdUI_AdminReadme_BannerText"><![CDATA[Сведения о "[ProductName]"]]></String>
+  <String Id="StdUI_AdminReadme_ButtonNext"><![CDATA[Д&алее >]]></String>
+  <String Id="StdUI_AdminReadme_ButtonBack"><![CDATA[< &Назад]]></String>
+  <String Id="StdUI_AdminReadme_ButtonCancel"><![CDATA[Отмена]]></String>
+  <!-- AdminProgressDlg Dialog -->
+  <String Id="StdUI_AdminProgress_Title"><![CDATA[[ProductName]]]></String>
+  <String Id="StdUI_AdminProgress_ProgressLabelText"><![CDATA[Пожалуйста, подождите...]]></String>
+  <String Id="StdUI_AdminProgress_InstalledBodyText"><![CDATA[Идет установка "[ProductName]".]]></String>
+  <String Id="StdUI_AdminProgress_RemovedBodyText"><![CDATA[Идет удаление "[ProductName]".]]></String>
+  <String Id="StdUI_AdminProgress_InstalledBannerText"><![CDATA[Установка "[ProductName]"]]></String>
+  <String Id="StdUI_AdminProgress_RemoveBannerText"><![CDATA[Удаление "[ProductName]"]]></String>
+  <String Id="StdUI_AdminProgress_ButtonNext"><![CDATA[Д&алее >]]></String>
+  <String Id="StdUI_AdminProgress_ButtonBack"><![CDATA[< &Назад]]></String>
+  <String Id="StdUI_AdminProgress_ButtonCancel"><![CDATA[Отмена]]></String>
+  <!-- AdminLicenseDlg Dialog -->
+  <String Id="StdUI_AdminLicense_Title"><![CDATA[[ProductName]]]></String>
+  <String Id="StdUI_AdminLicense_NotAgree"><![CDATA[Н&е принимаю]]></String>
+  <String Id="StdUI_AdminLicense_Agree"><![CDATA[&Принимаю]]></String>
+  <String Id="StdUI_AdminLicense_BannerText"><![CDATA[Лицензионное соглашение]]></String>
+  <String Id="StdUI_AdminLicense_BodyText"><![CDATA[Прочтите, пожалуйста, это лицензионное соглашение. Если вы принимаете условия лицензионного соглашения, выберите вариант "Принимаю" и нажмите кнопку "Далее". В противном случае нажмите кнопку "Отмена".]]></String>
+  <String Id="StdUI_AdminLicense_ButtonNext"><![CDATA[Д&алее >]]></String>
+  <String Id="StdUI_AdminLicense_ButtonBack"><![CDATA[< &Назад]]></String>
+  <String Id="StdUI_AdminLicense_ButtonCancel"><![CDATA[Отмена]]></String>
+  <!-- AdminFolderDlg Dialog -->
+  <String Id="StdUI_AdminFolder_Title"><![CDATA[[ProductName]]]></String>
+  <String Id="StdUI_AdminFolder_FolderLabel"><![CDATA[&Папка:]]></String>
+  <String Id="StdUI_AdminFolder_BrowseButton"><![CDATA[О&бзор...]]></String>
+  <String Id="StdUI_AdminFolder_DiskCostButton"><![CDATA[&Место на дисках...]]></String>
+  <String Id="StdUI_AdminFolder_BannerText"><![CDATA[Расположение в сети]]></String>
+  <String Id="StdUI_AdminFolder_Body"><![CDATA[Установщик создаст сетевой образ в следующем расположении.
+
+Чтобы воспользоваться данной папкой, нажмите кнопку "Далее". Чтобы сменить папку, введите нужный путь или выберите ее, нажав кнопку "Обзор".]]></String>
+  <String Id="StdUI_AdminFolder_ButtonNext"><![CDATA[Д&алее >]]></String>
+  <String Id="StdUI_AdminFolder_ButtonBack"><![CDATA[< &Назад]]></String>
+  <String Id="StdUI_AdminFolder_ButtonCancel"><![CDATA[Отмена]]></String>
+  <!-- AdminFinishedDlg Dialog -->
+  <String Id="StdUI_AdminFinished_Title"><![CDATA[[ProductName]]]></String>
+  <String Id="StdUI_AdminFinished_BannerText"><![CDATA[Установка завершена]]></String>
+  <String Id="StdUI_AdminFinished_BodyTextInstall"><![CDATA[Сетевой образ продукта "[ProductName]" успешно создан.
+
+Для выхода нажмите кнопку "Закрыть".]]></String>
+  <String Id="StdUI_AdminFinished_BodyText"><![CDATA[Продукт "[ProductName]" успешно удален.
+
+Для выхода нажмите кнопку "Закрыть".]]></String>
+  <String Id="StdUI_AdminFinished_ButtonClose"><![CDATA[&Закрыть]]></String>
+  <String Id="StdUI_AdminFinished_ButtonCancel"><![CDATA[Отмена]]></String>
+  <String Id="StdUI_AdminFinished_ButtonBack"><![CDATA[< &Назад]]></String>
+  <!-- AdminFinishDialogs -->
+  <String Id="StdUI_AdminMaintenanceAction_Repair"><![CDATA[&Восстановить "[ProductName]"]]></String>
+  <String Id="StdUI_AdminMaintenanceAction_Remove"><![CDATA[&Удалить "[ProductName]"]]></String>
+  <String Id="StdUI_AdminUserExit_Title"><![CDATA[[ProductName]]]></String>
+  <String Id="StdUI_AdminUserExit_BannerText"><![CDATA[Установка прервана]]></String>
+  <String Id="StdUI_AdminUserExit_BodyTextInstall"><![CDATA[Работа установщика была прервана до завершения установки "[ProductName]". Чтобы повторить попытку, следует перезапустить установщик.]]></String>
+  <String Id="StdUI_AdminUserExit_BodyTextRemove"><![CDATA[Работа установщика была прервана до завершения удаления "[ProductName]". Чтобы повторить попытку, следует перезапустить установщик.
+
+Для выхода нажмите кнопку "Закрыть".]]></String>
+  <String Id="StdUI_AdminUserExit_ButtonClose"><![CDATA[&Закрыть]]></String>
+  <String Id="StdUI_AdminUserExit_ButtonCancel"><![CDATA[Отмена]]></String>
+  <String Id="StdUI_AdminUserExit_ButtonBack"><![CDATA[< &Назад]]></String>
+  <String Id="StdUI_AdminFatalError_Title"><![CDATA[[ProductName]]]></String>
+  <String Id="StdUI_AdminFatalError_BannerText"><![CDATA[Установка не завершена]]></String>
+  <String Id="StdUI_AdminFatalError_BodyTextRemove"><![CDATA[Работа установщика была прервана до завершения удаления [ProductName]. Чтобы повторить попытку, следует перезапустить установщик.
+
+Для выхода нажмите кнопку "Закрыть".]]></String>
+  <String Id="StdUI_AdminFatalError_BodyTextInstall"><![CDATA[Работа установщика была прервана до завершения установки [ProductName]. Чтобы повторить попытку, следует перезапустить установщик.
+
+Для выхода нажмите кнопку "Закрыть".]]></String>
+  <String Id="StdUI_AdminFatalError_ButtonClose"><![CDATA[&Закрыть]]></String>
+  <String Id="StdUI_AdminFatalError_ButtonCancel"><![CDATA[Отмена]]></String>
+  <String Id="StdUI_AdminFatalError_ButtonBack"><![CDATA[< &Назад]]></String>
+  <String Id="StdUI_AdminMaintenance_Title"><![CDATA[[ProductName]]]></String>
+  <String Id="StdUI_AdminMaintenance_BannerText"><![CDATA[Вас приветствует мастер установки "[ProductName]"]]></String>
+  <String Id="StdUI_AdminMaintenance_BodyText"><![CDATA[Выберите, следует ли восстановить или удалить "[ProductName]".]]></String>
+  <String Id="StdUI_AdminMaintenance_ButtonFinish"><![CDATA[&Готово]]></String>
+  <String Id="StdUI_AdminMaintenance_ButtonCancel"><![CDATA[Отмена]]></String>
+  <String Id="StdUI_AdminMaintenance_ButtonBack"><![CDATA[< &Назад]]></String>
+  <String Id="StdUI_AdminResume_Title"><![CDATA[[ProductName]]]></String>
+  <String Id="StdUI_AdminResume_BannerText"><![CDATA[Вас приветствует мастер установки "[ProductName]"]]></String>
+  <String Id="StdUI_AdminResume_BodyText"><![CDATA[Установщик восстановит "[ProductName]" на вашем компьютере.
+
+Для продолжения нажмите кнопку "Готово".]]></String>
+  <String Id="StdUI_AdminResume_ButtonFinish"><![CDATA[&Готово]]></String>
+  <String Id="StdUI_AdminResume_ButtonCancel"><![CDATA[Отмена]]></String>
+  <String Id="StdUI_AdminResume_ButtonBack"><![CDATA[< &Назад]]></String>
+  <!-- AdminConfirmDlg Dialog -->
+  <String Id="StdUI_AdminConfirm_Title"><![CDATA[[ProductName]]]></String>
+  <String Id="StdUI_AdminConfirm_BannerText"><![CDATA[Подтверждение установки]]></String>
+  <String Id="StdUI_AdminConfirm_BodyText1"><![CDATA[Установщик готов к установке "[ProductName]" на ваш компьютер.
+
+Для начала установки нажмите кнопку "Далее".]]></String>
+  <String Id="StdUI_AdminConfirm_ButtonNext"><![CDATA[Д&алее >]]></String>
+  <String Id="StdUI_AdminConfirm_ButtonBack"><![CDATA[< &Назад]]></String>
+  <String Id="StdUI_AdminConfirm_ButtonCancel"><![CDATA[Отмена]]></String>
+</WixLocalization>
