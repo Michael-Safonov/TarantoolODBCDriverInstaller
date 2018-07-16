@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2035
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "TarantoolODBCDriverInstaller", "TarantoolODBCDriverInstaller.wixproj", "{FBFFD24B-1003-45E9-A6FD-A5038620CFA1}"
+Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "TarantoolODBCDriverInstaller", "TarantoolODBCDriverInstaller\TarantoolODBCDriverInstaller.wixproj", "{FBFFD24B-1003-45E9-A6FD-A5038620CFA1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
