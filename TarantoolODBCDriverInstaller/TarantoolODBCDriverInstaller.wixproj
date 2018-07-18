@@ -45,15 +45,15 @@
     <Compile Include="WixUI_CustomMondo.wxs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="InstallFiles" />
     <Folder Include="Lib" />
     <Folder Include="Resources\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="InstallFiles\Driver_x64.dll" />
-    <Content Include="InstallFiles\Driver_x86.dll" />
-    <Content Include="InstallFiles\License.rtf" />
+    <Content Include="CMakeLists.txt" />
     <Content Include="Lib\WixUIExtension.dll" />
+    <Content Include="Resources\Driver_x64.dll" />
+    <Content Include="Resources\Driver_x86.dll" />
+    <Content Include="Resources\License.rtf" />
     <Content Include="Resources\WiXDefBannerBitmap.bmp" />
     <Content Include="Resources\WiXNewFolderBtn.ico" />
     <Content Include="Resources\WiXUpFolderBtn.ico" />
