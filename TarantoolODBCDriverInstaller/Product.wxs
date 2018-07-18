@@ -9,32 +9,8 @@
     
     <MediaTemplate EmbedCab="yes" />
     <WixVariable Id="WixUILicenseRtf" Value="Resources\License.rtf" />
-
-    <!--<SetDirectory Id="DRIVER64FOLDER" Value="D:\Temp\Test" />-->
     
-    <Directory Id="TARGETDIR" Name="SourceDir">
-      <!--<Directory Id="DRIVER64_FOLDER" Name="Setup64Folder" />
-      <Directory Id="DRIVER32_FOLDER" Name="Setup32Folder" />-->
-    </Directory>
-
-    <!-- Project property -->
-    <!--<Property Id="DRIVER64_PATH" Value="C:\WINDOWS\System32\$(var.Win64DriverFileName)" />-->
-    <!--<Property Id="SYSTEM_FOLDER" Value="C:\WINDOWS\System32\" />-->
-
-    <!-- Property-Action Definition-->
-    <!--<CustomAction Id="SetDriver32PathForWin64" Property="DRIVER32_PATH" Value="C:\WINDOWS\SysWOW64\$(var.Win32DriverFileName)" />
-    <CustomAction Id="SetDriver32PathForWin32" Property="DRIVER32_PATH" Value="C:\WINDOWS\System32\$(var.Win32DriverFileName)" />
-    <CustomAction Id="SetDriver64DirectoryPath" Directory="DRIVER64_FOLDER" Value="C:\WINDOWS\System32" />
-    <CustomAction Id="SetDriver32DirectoryPath" Directory="DRIVER32_FOLDER" Value="C:\WINDOWS\SysWOW64" />-->
-    
-    <!--<SetDirectory Id="DRIVER32FOLDER" Value="[DRIVER32_PATH]" />-->
-
-    <!-- Conditionally execute the property actions -->
-    <!--<InstallExecuteSequence>
-      <Custom Action="SetDriver32PathForWin64" Before="InstallFiles"><![CDATA[VersionNT64]]></Custom>
-      <Custom Action="SetDriver32PathForWin32" Before="InstallFiles"><![CDATA[NOT(VersionNT64)]]></Custom>
-      <Custom Action="SetDriver64DirectoryPath" Before="InstallFiles">1</Custom>
-    </InstallExecuteSequence>-->
+    <Directory Id="TARGETDIR" Name="SourceDir" />
     
     <FeatureRef Id="Driver64Feature" />
     <FeatureRef Id="Driver32Feature" />
