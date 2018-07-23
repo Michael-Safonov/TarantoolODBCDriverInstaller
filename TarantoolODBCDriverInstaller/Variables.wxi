@@ -4,5 +4,5 @@
   <?define ProductVersion="1.0.1.0" ?>
   <?define DriverRegistryName="Tarantool"?>
   <?define Win64DriverFileName="tnt_odbc.dll"?>
-  <?define Win32DriverFileName="Driver_x86.dll"?>
+  <?define Win32DriverFileName="tnt_odbc.dll"?>
 </Include>

@@ -2,18 +2,35 @@
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
   <?include Variables.wxi?>
   
-  <Product Id="30562100-FB26-4D86-A041-B6260BFF2CBA" Name="$(var.ProductName)" Language="!(loc.ID)" Version="$(var.ProductVersion)" Manufacturer="Tarantool" UpgradeCode="35a8fe49-4b51-43cc-9393-214c7cce8523">
-    <Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" Description="Tarantool ODBC Driver installer" Platform="x86" Languages="0,1033,1049," />
+  <Product Id="*" Name="$(var.ProductName)" Language="!(loc.ID)" Version="$(var.ProductVersion)" Manufacturer="Tarantool" UpgradeCode="35a8fe49-4b51-43cc-9393-214c7cce8523">
+    <Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" Description="Tarantool ODBC Driver installer" Platform="x64" Languages="0,1033,1049," />
     
     <MajorUpgrade AllowDowngrades="no" DowngradeErrorMessage="!(loc.NewerVersionInstalled)" AllowSameVersionUpgrades="no" />
     
     <MediaTemplate EmbedCab="yes" />
+    
     <WixVariable Id="WixUILicenseRtf" Value="Resources\License.rtf" />
     
     <Directory Id="TARGETDIR" Name="SourceDir" />
     
     <FeatureRef Id="Driver64Feature" />
     <FeatureRef Id="Driver32Feature" />
+
+    <CustomAction Id="SetWin64Driver32PathFile" Property="DRIVER32_PATH" Value="%WINDIR%\SysWOW64\$(var.Win32DriverFileName)" />
+    <CustomAction Id="SetWin32Driver32PathFile" Property="DRIVER32_PATH" Value="%WINDIR%\System32\$(var.Win32DriverFileName)" />
+    <CustomAction Id="SetWin64Driver64PathFile" Property="DRIVER64_PATH" Value="%WINDIR%\System32\$(var.Win64DriverFileName)" />
+    <!--<CustomAction Id="Driver64Registration" Directory="TARGETDIR" Execute="commit"
+                  ExeCommand="cmd.exe /c odbcconf /A {INSTALLDRIVER &quot;Tarantool|driver=C:\Windows\System32\tnt_odbc.dll|setup=C:\Windows\System32\tnt_odbc.dll&quot;} /Lv &quot;D:\LogSetup.txt&quot;" />
+    <CustomAction Id="Driver32Registration" Directory="TARGETDIR" Execute="commit"
+                  ExeCommand="cmd.exe /c %systemroot%/syswow64/odbcconf /A {INSTALLDRIVER &quot;Tarantool|driver=C:\Windows\SysWOW64\tnt_odbc.dll|setup=C:\Windows\SysWOW64\tnt_odbc.dll&quot;} /Lv &quot;D:\LogSetup.txt&quot;" />-->
+
+    <InstallExecuteSequence>
+      <Custom Action="SetWin64Driver32PathFile" Before="InstallFiles"><![CDATA[VersionNT64]]></Custom>
+      <Custom Action="SetWin32Driver32PathFile" Before="InstallFiles"><![CDATA[NOT(VersionNT64)]]></Custom>
+      <Custom Action="SetWin64Driver64PathFile" Before="InstallFiles"><![CDATA[VersionNT64]]></Custom>
+      <!--<Custom Action="Driver64Registration" After="InstallFiles"><![CDATA[VersionNT64 AND Not Installed]]></Custom>
+      <Custom Action="Driver32Registration" After="InstallFiles"><![CDATA[VersionNT64 AND Not Installed]]></Custom>-->
+    </InstallExecuteSequence>
     
     <UIRef Id="WixUI_CustomMondo" />
   </Product>

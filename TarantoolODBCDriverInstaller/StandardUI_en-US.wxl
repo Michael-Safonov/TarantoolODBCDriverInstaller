@@ -4,7 +4,9 @@
   <String Id="LangID">StdUI_ENU</String>
 
   <String Id="NewerVersionInstalled"><![CDATA[A later version of [ProductName] is already installed. Setup will now exit.]]></String>
-  
+  <String Id="Driver64Name"><![CDATA[64-bit odbc driver]]></String>
+  <String Id="Driver32Name"><![CDATA[32-bit odbc driver]]></String>
+
   <!-- UserInterface dialogs -->
   <String Id="StdUI_MenuLocal"><![CDATA[Will be installed on local hard drive]]></String>
   <String Id="StdUI_SelParentCostNegNeg"><![CDATA[This feature frees up [1] on your hard drive. It has [2] of [3] subfeatures selected. The subfeatures free up [4] on your hard drive.]]></String>
