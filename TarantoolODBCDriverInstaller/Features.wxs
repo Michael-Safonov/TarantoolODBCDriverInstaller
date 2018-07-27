@@ -7,7 +7,7 @@
       <ComponentGroupRef Id="Driver64RegistryKeyComponents"/>
       
       <Feature Id="Driver32Feature1" Title="!(loc.Driver32Name)" Level="2">      
-        <ComponentRef Id="Driver32FileComponent" />
+        <ComponentRef Id="Driver32FileComponent"  />
         <ComponentGroupRef Id="Driver32RegistryKeyComponents"/>
       </Feature>
     </Feature>

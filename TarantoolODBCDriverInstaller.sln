@@ -5,6 +5,13 @@ VisualStudioVersion = 15.0.27703.2035
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "TarantoolODBCDriverInstaller", "TarantoolODBCDriverInstaller\TarantoolODBCDriverInstaller.wixproj", "{FBFFD24B-1003-45E9-A6FD-A5038620CFA1}"
 EndProject
+Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "TarantoolODBCDriverBootstrapper", "TarantoolODBCDriverBootstrapper\TarantoolODBCDriverBootstrapper.wixproj", "{D22B5EC1-AD62-499A-B440-6C535548951E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{AFCC9B1D-4B85-405D-99F1-D16D18FD0B21}"
+	ProjectSection(SolutionItems) = preProject
+		CMakeLists.txt = CMakeLists.txt
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -20,6 +27,12 @@ Global
 		{FBFFD24B-1003-45E9-A6FD-A5038620CFA1}.Release|x64.ActiveCfg = Release|x86
 		{FBFFD24B-1003-45E9-A6FD-A5038620CFA1}.Release|x86.ActiveCfg = Release|x86
 		{FBFFD24B-1003-45E9-A6FD-A5038620CFA1}.Release|x86.Build.0 = Release|x86
+		{D22B5EC1-AD62-499A-B440-6C535548951E}.Debug|x64.ActiveCfg = Debug|x86
+		{D22B5EC1-AD62-499A-B440-6C535548951E}.Debug|x86.ActiveCfg = Debug|x86
+		{D22B5EC1-AD62-499A-B440-6C535548951E}.Debug|x86.Build.0 = Debug|x86
+		{D22B5EC1-AD62-499A-B440-6C535548951E}.Release|x64.ActiveCfg = Release|x86
+		{D22B5EC1-AD62-499A-B440-6C535548951E}.Release|x86.ActiveCfg = Release|x86
+		{D22B5EC1-AD62-499A-B440-6C535548951E}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

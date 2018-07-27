@@ -262,3 +262,6 @@ __pycache__/
 
 #CMake files
 *CMakeBuild*/
+/LicenseSource
+/DriverSource
+/CMakeLists.txt

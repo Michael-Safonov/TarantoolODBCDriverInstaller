@@ -1,8 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Include>
-  <?define ProductName="TarantoolODBCDriver" ?>
-  <?define ProductVersion="1.0.1.0" ?>
+  <?define ProductName=@ProductName@?>
+  <?define ProductVersion=@ProductVersion@ ?>
+  <?define Manufacturer = @Manufacturer@?>
+  
   <?define DriverRegistryName="Tarantool"?>
-  <?define Win64DriverFileName="tnt_odbc.dll"?>
-  <?define Win32DriverFileName="tnt_odbc.dll"?>
+  
+  <?define Driver64bitSourcePath=@Driver64bitSourcePath@?>
+  <?define Driver32bitSourcePath=@Driver32bitSourcePath@?>
+  <?define Driver64bitFilename=@Driver64bitFilename@?>
+  <?define Driver32bitFilename=@Driver32bitFilename@?>
+  
+  <?define BitmapSourcePath=@BitmapSourcePath@?>
+  <?define BannerBitmapFilename=@BannerBitmapFilename@?>
+  <?define AddRemoveProgramsIconFilename=@AddRemoveProgramsIconFilename@?>
+  <?define DialogBitmapFilename=@DialogBitmapFilename@?>
+  <?define LicenseSourcePath=@LicenseSourcePath@?>
+  <?define LicenseFilename=@LicenseFilename@?>
 </Include>

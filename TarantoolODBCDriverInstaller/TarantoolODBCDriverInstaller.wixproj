@@ -47,17 +47,10 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Lib" />
-    <Folder Include="Resources\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="CMakeLists.txt" />
     <Content Include="Lib\WixUIExtension.dll" />
-    <Content Include="Resources\Driver_x64.dll" />
-    <Content Include="Resources\Driver_x86.dll" />
-    <Content Include="Resources\License.rtf" />
-    <Content Include="Resources\WiXDefBannerBitmap.bmp" />
-    <Content Include="Resources\WiXNewFolderBtn.ico" />
-    <Content Include="Resources\WiXUpFolderBtn.ico" />
     <Content Include="Variables.wxi" />
   </ItemGroup>
   <ItemGroup>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Include>
+  <?define ProductName=@ProductName@?>
+  <?define ProductVersion=@ProductVersion@ ?>
+  <?define Manufacturer = @Manufacturer@?>
+  
+  <?define 64bitMsiPath = @64bitMsiPath@?>
+  <?define 32bitMsiPath = @32bitMsiPath@?>
+  
+  <?define LanguageBuild = @LanguageBuild@?>
+  
+  <?define BitmapSourcePath=@BitmapSourcePath@?>
+  <?define AddRemoveProgramsIconFilename=@AddRemoveProgramsIconFilename@?>
+  <?define DialogBitmapFilename=@DialogBitmapFilename@?>
+</Include>

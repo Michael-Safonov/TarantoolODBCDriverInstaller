@@ -6,6 +6,8 @@
   <String Id="NewerVersionInstalled"><![CDATA[A later version of [ProductName] is already installed. Setup will now exit.]]></String>
   <String Id="Driver64Name"><![CDATA[64-bit odbc driver]]></String>
   <String Id="Driver32Name"><![CDATA[32-bit odbc driver]]></String>
+  <String Id="LicenseRtf" Overridable="yes">Resources\bsd_license_En.rtf</String>
+  <String Id="LicenseFile">Resources\bsd_license_En.rtf</String>
 
   <!-- UserInterface dialogs -->
   <String Id="StdUI_MenuLocal"><![CDATA[Will be installed on local hard drive]]></String>
