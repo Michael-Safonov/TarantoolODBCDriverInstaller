@@ -264,4 +264,5 @@ __pycache__/
 *CMakeBuild*/
 /LicenseSource
 /DriverSource
-/CMakeLists.txt
+/TarantoolODBCDriverBootstrapper/FilledVariables.wxi
+/TarantoolODBCDriverInstaller/FilledVariables.wxi
