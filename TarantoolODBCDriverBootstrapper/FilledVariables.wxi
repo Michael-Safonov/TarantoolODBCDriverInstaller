@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Include>
+  <?define ProductName=TarantoolODBCDriver?>
+  <?define ProductVersion=1.0.1.0 ?>
+  <?define Manufacturer = Mail.ru?>
+  
+  <?define 64bitMsiPath = D:/VSProjects/TeamProjects/TarantoolODBCDriverInstaller/TarantoolODBCDriverInstaller/TarantoolODBCDriverInstaller/bin/x64/TarantoolODBCDriverInstaller_x64.msi?>
+  <?define 32bitMsiPath = D:/VSProjects/TeamProjects/TarantoolODBCDriverInstaller/TarantoolODBCDriverInstaller/TarantoolODBCDriverInstaller/bin/x32/TarantoolODBCDriverInstaller_x86.msi?>
+  
+  <?define LanguageBuild = RU?>
+  
+  <?define BitmapSourcePath=D:/VSProjects/TeamProjects/TarantoolODBCDriverInstaller/TarantoolODBCDriverInstaller/BitmapSource?>
+  <?define AddRemoveProgramsIconFilename=tarantool_icon.ico?>
+  <?define DialogBitmapFilename=dlgbmp_tarantool.bmp?>
+</Include>

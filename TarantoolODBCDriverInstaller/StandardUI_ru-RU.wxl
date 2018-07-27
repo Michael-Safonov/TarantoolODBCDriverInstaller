@@ -6,6 +6,7 @@
   <String Id="NewerVersionInstalled"><![CDATA[Более поздняя версия [ProductName] уже установлена. Программа установки завершит работу.]]></String>
   <String Id="Driver64Name"><![CDATA[64-х разрядный odbc драйвер]]></String>
   <String Id="Driver32Name"><![CDATA[32-х разрядный odbc драйвер]]></String>
+  <String Id="LicenseFile">Resources\bsd_license_En.rtf</String>
   
   <!-- UserInterface dialogs -->
   <String Id="StdUI_MenuLocal"><![CDATA[Будет установлен на локальный жесткий диск]]></String>

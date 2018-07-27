@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi"
+     xmlns:bal="http://schemas.microsoft.com/wix/BalExtension">
+
+  <?include FilledVariables.wxi?>
+    
+	<Bundle Name="$(var.ProductName)"
+          Version="$(var.ProductVersion)"
+          Manufacturer="$(var.Manufacturer)"
+          UpgradeCode="7E560453-3355-46BE-9F53-18AB96CAFF01" 
+          IconSourceFile="$(var.BitmapSourcePath)\$(var.AddRemoveProgramsIconFilename)">
+    
+    <?if $(var.LanguageBuild) = "RU"?>
+      <BootstrapperApplicationRef Id="WixStandardBootstrapperApplication.HyperlinkLicense">
+        <bal:WixStandardBootstrapperApplication
+          LicenseUrl=""
+          SuppressOptionsUI="yes"
+          SuppressRepair="yes"
+          ThemeFile="Resources\ClassicTheme.xml"
+          LocalizationFile="Resources\1049\ClassicTheme.wxl"
+          LogoFile="$(var.BitmapSourcePath)/$(var.DialogBitmapFilename)"
+        />
+      </BootstrapperApplicationRef>
+    <?else?>
+      <BootstrapperApplicationRef Id="WixStandardBootstrapperApplication.HyperlinkLicense">
+        <bal:WixStandardBootstrapperApplication
+          LicenseUrl=""
+          SuppressOptionsUI="yes"
+          SuppressRepair="yes"
+          ThemeFile="Resources\ClassicTheme.xml"
+          LocalizationFile="Resources\ClassicTheme.wxl"
+          LogoFile="$(var.BitmapSourcePath)/$(var.DialogBitmapFilename)"
+          />
+      </BootstrapperApplicationRef>
+    <?endif?>
+    
+		<Chain>
+      <MsiPackage Id="PackageOldWin"
+        SourceFile="$(var.32bitMsiPath)"
+                  Permanent="no" Compressed="yes" Vital="yes"
+                  DisplayInternalUI="yes" InstallCondition="NOT(VersionNT64)">
+      </MsiPackage>
+      
+      <MsiPackage Id="PackageNewWin"
+        SourceFile="$(var.64bitMsiPath)"
+                  Permanent="no" Compressed="yes" Vital="yes"
+                  DisplayInternalUI="yes" InstallCondition="VersionNT64">
+      </MsiPackage>
+		</Chain>
+	</Bundle>
+</Wix>
