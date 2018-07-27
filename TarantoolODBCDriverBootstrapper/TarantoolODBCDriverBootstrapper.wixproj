@@ -24,13 +24,13 @@
     <Compile Include="Bundle.wxs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\1049\ClassicTheme.wxl" />
-    <EmbeddedResource Include="Resources\ClassicTheme.wxl" />
+    <None Include="Resources\1049\CustomTheme.wxl" />
+    <EmbeddedResource Include="Resources\CustomTheme.wxl" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="CMakeLists.txt" />
     <Content Include="Lib\WixBalExtension.dll" />
-    <Content Include="Resources\ClassicTheme.xml" />
+    <Content Include="Resources\CustomTheme.xml" />
     <Content Include="Resources\dlgbmp.bmp" />
     <Content Include="Variables.wxi" />
   </ItemGroup>

@@ -16,8 +16,8 @@
           LicenseUrl=""
           SuppressOptionsUI="yes"
           SuppressRepair="yes"
-          ThemeFile="Resources\ClassicTheme.xml"
-          LocalizationFile="Resources\1049\ClassicTheme.wxl"
+          ThemeFile="Resources\CustomTheme.xml"
+          LocalizationFile="Resources\1049\CustomTheme.wxl"
           LogoFile="$(var.BitmapSourcePath)/$(var.DialogBitmapFilename)"
         />
       </BootstrapperApplicationRef>
@@ -27,8 +27,8 @@
           LicenseUrl=""
           SuppressOptionsUI="yes"
           SuppressRepair="yes"
-          ThemeFile="Resources\ClassicTheme.xml"
-          LocalizationFile="Resources\ClassicTheme.wxl"
+          ThemeFile="Resources\CustomTheme.xml"
+          LocalizationFile="Resources\CustomTheme.wxl"
           LogoFile="$(var.BitmapSourcePath)/$(var.DialogBitmapFilename)"
           />
       </BootstrapperApplicationRef>

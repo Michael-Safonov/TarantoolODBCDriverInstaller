@@ -14,8 +14,7 @@ ADD_CUSTOM_COMMAND(
 		DEPENDS
 		${TempFilePathForBootstrapper}/Bundle.wixobj
 		COMMAND ${WixDir}/light.exe 
-		-out ${BootstrapperApplicationPath}/${BootstrapperApplicationName}
-		-loc ${CMAKE_CURRENT_SOURCE_DIR}/Resources/ClassicTheme.wxl 
+		-out ${BootstrapperApplicationPath}/${BootstrapperApplicationName} 
 		-b ${SearchBootstrapperResoursesPath}
 		-ext ${CMAKE_CURRENT_SOURCE_DIR}/Lib/WixBalExtension.dll 
 		${TempFilePathForBootstrapper}/Bundle.wixobj)
