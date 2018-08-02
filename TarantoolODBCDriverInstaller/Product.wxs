@@ -20,11 +20,35 @@
     
     <FeatureRef Id="Driver64Feature" />
     <FeatureRef Id="Driver32Feature" />
+    
+    <Property Id="VCRUNTIME140D64FILEEXISTS">
+      <DirectorySearch Id="VCRuntime140dSearch64" Path="[System64Folder]" Depth="0">
+        <FileSearch Name="vcruntime140d.dll"/>
+      </DirectorySearch>
+    </Property>
+
+    <Property Id="UCRTBASED64FILEEXISTS">
+      <DirectorySearch Id="UCRTBasedSearch64" Path="[System64Folder]" Depth="0">
+        <FileSearch Name="ucrtbased.dll"/>
+      </DirectorySearch>
+    </Property>
+
+    <Property Id="VCRUNTIME140D32FILEEXISTS">
+      <DirectorySearch Id="VCRuntime140dSearch32" Path="[SystemFolder]" Depth="0">
+        <FileSearch Name="vcruntime140d.dll"/>
+      </DirectorySearch>
+    </Property>
+
+    <Property Id="UCRTBASED32FILEEXISTS">
+      <DirectorySearch Id="UCRTBasedSearch32" Path="[SystemFolder]" Depth="0">
+        <FileSearch Name="ucrtbased.dll"/>
+      </DirectorySearch>
+    </Property>
 
     <CustomAction Id="SetWin64Driver32PathFile" Property="DRIVER32_PATH" Value="%WINDIR%\SysWOW64\$(var.Driver32bitFilename)" />
     <CustomAction Id="SetWin32Driver32PathFile" Property="DRIVER32_PATH" Value="%WINDIR%\System32\$(var.Driver32bitFilename)" />
     <CustomAction Id="SetWin64Driver64PathFile" Property="DRIVER64_PATH" Value="%WINDIR%\System32\$(var.Driver64bitFilename)" />
-    
+
     <InstallExecuteSequence>
       <Custom Action="SetWin64Driver32PathFile" Before="InstallFiles"><![CDATA[VersionNT64]]></Custom>
       <Custom Action="SetWin32Driver32PathFile" Before="InstallFiles"><![CDATA[NOT(VersionNT64)]]></Custom>

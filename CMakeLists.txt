@@ -35,9 +35,9 @@ set(LanguageBuild "RU")
 
 #--------- Set msi variables --------------------------
 set(Driver64bitSourcePath "${CMAKE_CURRENT_SOURCE_DIR}/DriverSource")
-set(Driver32bitSourcePath "${CMAKE_CURRENT_SOURCE_DIR}/DriverSource/x32")
-set(Driver64bitFilename "tnt_odbc.dll")
-set(Driver32bitFilename "tnt_odbc.dll")
+set(Driver32bitSourcePath "${CMAKE_CURRENT_SOURCE_DIR}/DriverSource")
+set(Driver64bitFilename "64.tnt_odbc.dll")
+set(Driver32bitFilename "32.tnt_odbc.dll")
 
 set(BitmapSourcePath "${CMAKE_CURRENT_SOURCE_DIR}/BitmapSource")
 set(BannerBitmapFilename "bannrbmp_tarantool.bmp")
@@ -68,7 +68,7 @@ set(64bitMsiPath "${MsiOutputPathFor64bit}/${MsiNameFor64bit}")
 set(32bitMsiPath "${MsiOutputPathFor32bit}/${MsiNameFor32bit}")
 
 set(BootstrapperApplicationPath "${CMAKE_CURRENT_SOURCE_DIR}/TarantoolODBCDriverBootstrapper/bin")
-set(BootstrapperApplicationName "TarantoolSetup.exe")
+set(BootstrapperApplicationName "TarantoolSetup_Ru.exe")
 set(TempFilePathForBootstrapper "${CMAKE_CURRENT_SOURCE_DIR}/TarantoolODBCDriverBootstrapper/obj/")
 
 add_subdirectory(TarantoolODBCDriverInstaller)
