@@ -8,15 +8,35 @@
         <Component Id="Driver64FileComponent" Guid="38AD3071-26B1-4125-BBDA-C5C4068062D4" Permanent="no" SharedDllRefCount="no" Transitive="no" Win64="yes" >
           <File Id="Driver64File" Hidden="no" ReadOnly="no" TrueType="no" System="no" Vital="yes" Source="$(var.Driver64bitSourcePath)\$(var.Driver64bitFilename)" KeyPath="yes" />
         </Component>
+        
+        <Component Id="VcRuntime140d64FileComponent" Guid="5047BEB9-0674-4A40-8506-093051F7FE57" Permanent="no" SharedDllRefCount="no" Transitive="no" Win64="yes" >
+          <Condition><![CDATA[NOT VCRUNTIME140D64FILEEXISTS]]></Condition>
+          <File Id="VCRuntime64File" Hidden="no" ReadOnly="no" TrueType="no" System="no" Vital="yes" Source="Resources\x64\vcruntime140d.dll" KeyPath="yes" />
+        </Component>
+        
+        <Component Id="Ucrtbased64FileComponent" Guid="0A0D5122-6CAB-4010-864C-DDA907ADBB26" Permanent="no" SharedDllRefCount="no" Transitive="no" Win64="yes" >
+          <Condition><![CDATA[NOT UCRTBASED64FILEEXISTS]]></Condition>
+          <File Id="UCRTBased64File" Hidden="no" ReadOnly="no" TrueType="no" System="no" Vital="yes" Source="Resources\x64\ucrtbased.dll" KeyPath="yes" />
+        </Component>
       </Directory>
     </DirectoryRef>
   </Fragment>
-  
+    
   <Fragment>
     <DirectoryRef Id="TARGETDIR">
       <Directory Id="SystemFolder">
         <Component Id="Driver32FileComponent" Guid="D298DDB3-F805-4B7E-9A84-A8C15CDAEB49" Permanent="no" SharedDllRefCount="no" Transitive="no" Win64="no">
           <File Id="Driver32File" Hidden="no" ReadOnly="no" TrueType="no" System="no" Vital="yes" Source="$(var.Driver32bitSourcePath)\$(var.Driver32bitFilename)" KeyPath="yes" />
+        </Component>
+      
+        <Component Id="VcRuntime140d32FileComponent" Guid="EC7F835E-7E3D-43FD-B7A6-453876060452" Permanent="no" SharedDllRefCount="no" Transitive="no" Win64="no" >
+          <Condition><![CDATA[NOT VCRUNTIME140D32FILEEXISTS]]></Condition>
+          <File Id="VCRuntime32File" Hidden="no" ReadOnly="no" TrueType="no" System="no" Vital="yes" Source="Resources\x86\vcruntime140d.dll" KeyPath="yes" />
+        </Component>
+        
+        <Component Id="Ucrtbased32FileComponent" Guid="8A0655CF-39B5-47C5-8056-969AD5A14020" Permanent="no" SharedDllRefCount="no" Transitive="no" Win64="no" >
+          <Condition><![CDATA[NOT UCRTBASED32FILEEXISTS]]></Condition>
+          <File Id="UCRTBased32File" Hidden="no" ReadOnly="no" TrueType="no" System="no" Vital="yes" Source="Resources\x86\ucrtbased.dll" KeyPath="yes" />
         </Component>
       </Directory>
     </DirectoryRef>

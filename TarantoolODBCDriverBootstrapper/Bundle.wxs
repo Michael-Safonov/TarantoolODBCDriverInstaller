@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi"
-     xmlns:bal="http://schemas.microsoft.com/wix/BalExtension">
+     xmlns:bal="http://schemas.microsoft.com/wix/BalExtension"
+     xmlns:util="http://schemas.microsoft.com/wix/UtilExtension">
 
   <?include FilledVariables.wxi?>
     
@@ -34,17 +35,80 @@
       </BootstrapperApplicationRef>
     <?endif?>
     
+    <!-- Determine minimal UpgradeCode https://stackoverflow.com/a/46637095  -->
+    <!-- Visual C++ 2015 Redistributable (x64) minimum runtime msi package version -->
+    <util:ProductSearch
+      Id="VCRedist2015x64"
+      Result="version"
+      Variable="VCRedist2015x64"
+      UpgradeCode="36F68A90-239C-34DF-B58C-64B30153CE35"
+      Condition="VersionNT64" />
+
+    <!-- Visual C++ 2015 Redistributable (x86) minimum runtime msi package version -->
+    <util:ProductSearch
+      Id="VCRedist2015x86"
+      Result="version"
+      Variable="VCRedist2015x86"
+      UpgradeCode="65E5BD06-6392-3027-8C26-853107D3CF1A"
+      Condition="VersionNT" />
+
+    <!-- Visual C++ 2015 Redistributable version -->
+    <Variable Name="VCRedist2015" Type="version" Value="14.0.24215" />
+    
+      
 		<Chain>
-      <MsiPackage Id="PackageOldWin"
-        SourceFile="$(var.32bitMsiPath)"
-                  Permanent="no" Compressed="yes" Vital="yes"
-                  DisplayInternalUI="yes" InstallCondition="NOT(VersionNT64)">
+      <!-- Visual C++ 2015 Redistributable Update 3 (x64) -->
+      <ExePackage
+        Id="vc_redist.x64.exe"
+        SourceFile="Resources\vc_redist.x64.exe"
+        DisplayName="Microsoft Visual C++ 2015 Redistributable (x64) - 14.0.24215"
+        Cache="no"
+        Compressed="yes"
+        PerMachine="yes"
+        Permanent="yes"
+        InstallCondition="VersionNT64"
+        DetectCondition="VCRedist2015x64 >= VCRedist2015"
+        InstallCommand="/install /quiet /norestart"
+        RepairCommand="/repair /quiet /norestart"
+        UninstallCommand="/uninstall /quiet /norestart" >
+        <ExitCode Value="1638" Behavior="success"/>
+      </ExePackage>
+      
+
+      <!-- Visual C++ 2015 Redistributable Update 3 (x86) -->
+      <ExePackage
+        Id="vc_redist.x86.exe"
+        SourceFile="Resources\vc_redist.x86.exe"
+        DisplayName="Microsoft Visual C++ 2015 Redistributable (x86) - 14.0.24215"
+        Cache="no"
+        Compressed="yes"
+        PerMachine="yes"
+        Permanent="yes"
+        InstallCondition="VersionNT"
+        DetectCondition="VCRedist2015x86 >= VCRedist2015"
+        InstallCommand="/install /quiet /norestart"
+        RepairCommand="/repair /quiet /norestart"
+        UninstallCommand="/uninstall /quiet /norestart" >
+      </ExePackage>
+         
+      <MsiPackage
+        Id="Package64"
+        SourceFile="$(var.64bitMsiPath)"
+        Permanent="no"
+        Compressed="yes"
+        Vital="yes"
+        DisplayInternalUI="yes"
+        InstallCondition="VersionNT64">
       </MsiPackage>
       
-      <MsiPackage Id="PackageNewWin"
-        SourceFile="$(var.64bitMsiPath)"
-                  Permanent="no" Compressed="yes" Vital="yes"
-                  DisplayInternalUI="yes" InstallCondition="VersionNT64">
+      <MsiPackage
+        Id="Package32"
+        SourceFile="$(var.32bitMsiPath)"
+        Permanent="no"
+        Compressed="yes"
+        Vital="yes"
+        DisplayInternalUI="yes"
+        InstallCondition="NOT(VersionNT64)">
       </MsiPackage>
 		</Chain>
 	</Bundle>

@@ -4,10 +4,14 @@
     <Feature Id="Driver64Feature" Title="!(loc.Driver64Name)" Level="0">
       <Condition Level="1">VersionNT64</Condition>
       <ComponentRef Id="Driver64FileComponent" />
+      <ComponentRef Id="VcRuntime140d64FileComponent" />
+      <ComponentRef Id="Ucrtbased64FileComponent" />
       <ComponentGroupRef Id="Driver64RegistryKeyComponents"/>
       
       <Feature Id="Driver32Feature1" Title="!(loc.Driver32Name)" Level="2">      
-        <ComponentRef Id="Driver32FileComponent"  />
+        <ComponentRef Id="Driver32FileComponent" />
+        <ComponentRef Id="VcRuntime140d32FileComponent" />
+        <ComponentRef Id="Ucrtbased32FileComponent" />
         <ComponentGroupRef Id="Driver32RegistryKeyComponents"/>
       </Feature>
     </Feature>
@@ -17,6 +21,8 @@
     <Feature Id="Driver32Feature" Title="!(loc.Driver32Name)" Level="0">
       <Condition Level="1"><![CDATA[NOT(VersionNT64)]]></Condition>
       <ComponentRef Id="Driver32FileComponent" />
+      <ComponentRef Id="VcRuntime140d32FileComponent" />
+      <ComponentRef Id="Ucrtbased32FileComponent" />
       <ComponentGroupRef Id="Driver32RegistryKeyComponents"/>
     </Feature>
 	</Fragment>

@@ -30,8 +30,11 @@
   <ItemGroup>
     <Content Include="CMakeLists.txt" />
     <Content Include="Lib\WixBalExtension.dll" />
+    <Content Include="Lib\WixUtilExtension.dll" />
     <Content Include="Resources\CustomTheme.xml" />
     <Content Include="Resources\dlgbmp.bmp" />
+    <Content Include="Resources\vc_redist.x64.exe" />
+    <EmbeddedResource Include="Resources\vc_redist.x86.exe" />
     <Content Include="Variables.wxi" />
   </ItemGroup>
   <ItemGroup>
@@ -40,6 +43,10 @@
     <Folder Include="Resources\1049" />
   </ItemGroup>
   <ItemGroup>
+    <WixExtension Include="WixUtilExtension">
+      <HintPath>Lib\WixUtilExtension.dll</HintPath>
+      <Name>WixUtilExtension</Name>
+    </WixExtension>
     <WixExtension Include="WixBalExtension">
       <HintPath>Lib\WixBalExtension.dll</HintPath>
       <Name>WixBalExtension</Name>

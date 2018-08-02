@@ -47,10 +47,17 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Lib" />
+    <Folder Include="Resources" />
+    <Folder Include="Resources\x86" />
+    <Folder Include="Resources\x64" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="CMakeLists.txt" />
     <Content Include="Lib\WixUIExtension.dll" />
+    <Content Include="Resources\x64\ucrtbased.dll" />
+    <Content Include="Resources\x64\vcruntime140d.dll" />
+    <Content Include="Resources\x86\ucrtbased.dll" />
+    <Content Include="Resources\x86\vcruntime140d.dll" />
     <Content Include="Variables.wxi" />
   </ItemGroup>
   <ItemGroup>
