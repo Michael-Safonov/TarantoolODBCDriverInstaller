@@ -70,7 +70,7 @@
         DetectCondition="VCRedist2015x64 >= VCRedist2015"
         InstallCommand="/install /quiet /norestart"
         RepairCommand="/repair /quiet /norestart"
-        UninstallCommand="/uninstall /quiet /norestart" >
+        UninstallCommand="/uninstall /quiet /norestart">
         <ExitCode Value="1638" Behavior="success"/>
       </ExePackage>
       
@@ -88,7 +88,8 @@
         DetectCondition="VCRedist2015x86 >= VCRedist2015"
         InstallCommand="/install /quiet /norestart"
         RepairCommand="/repair /quiet /norestart"
-        UninstallCommand="/uninstall /quiet /norestart" >
+        UninstallCommand="/uninstall /quiet /norestart">
+        <ExitCode Value="1638" Behavior="success"/>
       </ExePackage>
          
       <MsiPackage

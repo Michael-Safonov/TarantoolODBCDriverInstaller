@@ -2,7 +2,7 @@
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
   <?include FilledVariables.wxi?>
   
-  <Product Id="*" Name="$(var.ProductName)" Language="!(loc.ID)" Version="$(var.ProductVersion)" Manufacturer="$(var.Manufacturer)" UpgradeCode="35a8fe49-4b51-43cc-9393-214c7cce8523">
+  <Product Id="0CE829C5-B9C5-4F04-85A4-6942D6372708" Name="$(var.ProductName)" Language="!(loc.ID)" Version="$(var.ProductVersion)" Manufacturer="$(var.Manufacturer)" UpgradeCode="35a8fe49-4b51-43cc-9393-214c7cce8523">
     <Package Manufacturer="$(var.Manufacturer)" Comments="Comments" InstallerVersion="200" Compressed="yes" InstallScope="perMachine" Description="Tarantool ODBC Driver installer" 
              Platform="$(var.TargetPlatform)" Languages="0,1033,1049," />
     
